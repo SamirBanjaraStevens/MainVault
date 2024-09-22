@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "MA 188 - Seminar in Math Sciences"
+		},
+		{
+			"path": "MA 221 - Differential Equations"
+		},
+		{
+			"path": "MA 222 - Probability & Statistics"
+		},
+		{
+			"path": "MA 225 - Infinite Series"
+		},
+		{
+			"path": "MA 231 - Nonlinear Optimization"
+		},
+		{
+			"path": "PEP 111 - Mechanics"
+		}
+	],
+	"settings": {}
+}
