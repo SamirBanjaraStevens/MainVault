@@ -1,0 +1,1 @@
+### What are the differences between the culture history, the processual, and the post processual approaches to archaeology. How do these different theoretical outlooks impact our understanding of the archaeological record?

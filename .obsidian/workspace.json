@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "1d0726038de6e8c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "f39e2be357bf45c6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d179cae88c321368",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/Hw_3_Samir_Banjara.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ef53089672aba23f",
+    "type": "split",
+    "children": [
+      {
+        "id": "8dad41a3169f18d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ec2182fd43f17e9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cfe027dd92462041",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Session",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "29130194914f1ac5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 369.5110321044922
+  },
+  "right": {
+    "id": "78cb661a5ed535ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "2b3d82245478166f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5416f15882a8cdbb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/Hw_3_Samir_Banjara.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c035c9420928d881",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6eccf5364cdbecf0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/Hw_3_Samir_Banjara.md"
+              }
+            }
+          },
+          {
+            "id": "d5053d79d91bc5ab",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "48a8d6d245f92363",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/Hw_3_Samir_Banjara.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "18ba5441c2f1ffbd",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "6b674a05129e8fb5",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "6b674a05129e8fb5",
+  "lastOpenFiles": [
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/New Marlowe Faustus complete.pptx",
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/FINAL  M&M I - First 4 Fausts; Bulgakov & Making of a New Faust; Introduction to M&M - Copy.pptx",
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/7. From Faith to Skepticism & Goethe's Faust, Part I - Copy.pptx",
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/5D. Christopher Marlowe.ppt",
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/5C. Cultural Transmission of the Faust Tradition; Christopher Marlowe(1).ppt",
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/4.B Faustbook 1587-edited pacts with devil - Copy (15).pptx",
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/4. Faustbook 1587-edited pacts with devil - Copy.ppt",
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/3. Sample Pacts with the Devil, Magic Words(1) (6).pptx",
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/21. Satire in M&M -Satan and Sin (8)(1).pptx",
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/2. The Changing Face of the Devil; Witches;Learned men(1) (8).pptx",
+    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/12b. The Masters Story; The Devil and Insanity; Satin and Sin(1).pptx",
+    "University/Archive/Spring 2023/CS 220/Applied Discrete Math.md",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/Hw_3_Samir_Banjara.md",
+    "University/Archive/Spring 2023/CS 220/Gradescope/10 HW/10 HW.md",
+    "University/Archive/Spring 2023/CS 220/Gradescope/HW8.md",
+    "University/Archive/Spring 2023/CS 220/Gradescope/HW7.md",
+    "University/Archive/Spring 2023/CS 220/Gradescope/Homework 5.md",
+    "University/Archive/Spring 2023/CS 220/Gradescope/Homework 4.md",
+    "University/Archive/Spring 2023/CS 220/Gradescope/Homework 3.md",
+    "University/Archive/Spring 2023/CS 220/Gradescope/Homework 2.md",
+    "University/Archive/Spring 2023/CS 220/Gradescope/HomeWork 1.md",
+    "University/Archive/Spring 2023/CS 220/Gradescope/9 HW/9 HW.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Trees.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Sets.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Relations.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Boolean Algebra.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Computations.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Counting.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Functions.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Graphs.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Induction and Recursion.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Logic.md",
+    "University/Archive/Spring 2023/CS 220/Notes/slides/Proofs.md",
+    "University/Archive/Spring 2023/CS 220/Notes/2 Finals Study Exam.md",
+    "University/Archive/Spring 2023/CS 220/Notes/Finals Study Exam.md",
+    "University/Archive/Spring 2023/CS 220/Notes/Notes Ledger.md",
+    "Images/output.png",
+    "Images/Pasted image 20240907152931.png",
+    "University/FALL 2024/MA 225 - Infinite Series/Untitled.canvas",
+    "University/Spring 24'/ANTH 107/Untitled.canvas",
+    "University/Archive/Spring 24'/ANTH 107/Week 2 History of archaeological thought/Discussion 2/Audiocassette-tapes-chrome-metal-1614119929.jpg",
+    "University/Archive/Fall 23'/CS 210/Assignments/Project 1/Projects/project1/data/wayne98.png",
+    "University/Archive/Fall 23'/CS 210/Assignments/Project 1/Projects/project1/data/snake13.png",
+    "University/Archive/Fall 23'/CS 210/Assignments/Project 1/Projects/project1/data/snake101.png",
+    "University/Archive/Fall 23'/CS 210/Assignments/Project 1/Projects/project1/data/sedgewick60.png",
+    "University/Archive/Fall 23'/CS 210/Assignments/Project 1/Projects/project1/data/jerry47.png",
+    "University/Archive/Fall 23'/CS 210/Assignments/Project 1/Projects/project1/data/input8.png",
+    "University/Archive/Fall 23'/CS 210/Assignments/Project 1/Projects/project1/data/input8-no.png",
+    "University/Fall 23'/Untitled.canvas"
+  ]
+}

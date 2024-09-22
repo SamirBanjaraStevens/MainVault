@@ -1,0 +1,79 @@
+\documentclass[11pt,a4paper,roman]{moderncv}      
+\usepackage[english]{babel}
+
+\moderncvstyle{classic}                            
+\moderncvcolor{black}                            
+
+% character encoding
+\usepackage[utf8]{inputenc}                     
+
+% adjust the page margins
+\usepackage[scale=0.80]{geometry}
+
+% personal data
+\name{Samir}{Banjara}
+\email{samir.banjara001@umb.edu}
+\phone[mobile]{+1 774-325-6113}               
+\address{Nantucket, MA 02554}
+
+
+\begin{document}
+
+\recipient{To}{Department of Mathematics, \\
+               University of Massachusetts Boston,\\ 
+               100 Morrissey Blvd, Boston, MA 02125}
+\date{\today}
+\opening{\textbf{for Letter of Support: Professor Kourosh Zarringhalam Promotion to Full Professor}}
+\closing{Sincerly Yours,\vspace{-1em}}
+
+
+\makelettertitle
+
+
+
+To Whom It May Concern,\\
+
+%references such as what and how you got this information
+\vspace{.5cm}
+Thank you for the opportunity to provide feedback regarding Dr. Kourosh Zarringhalam's evaluation for promotion. I appreciate being selected to share my experiences and insights as a former student.
+
+\vspace{0.5cm}
+My academic journey with Dr. Kourosh Zarringhalam began in the Spring of 2023 in Numerical Linear Algebra (Math 426). Following this, I continued my learning under Dr. Zarringhalam's guidance in the Fall of 2023, when I enrolled in Numerical Analysis (Math 625), a graduate-level course that I undertook as an undergraduate. This experience was both challenging and enriching, as it provided me with an opportunity to delve deeper into complex mathematical concepts beyond the typical undergraduate curriculum. This progression of courses allowed me to build a comprehensive understanding of numerical methods and their applications in mathematics, a testament to Dr. Zarringhalam's adeptness in handling a diverse range of topics within his field.
+
+\vspace{0.5cm}
+Dr. Zarringhalam's teaching method was exceptionally effective in demystifying complex mathematical concepts. He started by decomposing each concept into distinct modular blocks. Within these blocks, he further segmented the material into steps and substeps, simplifying the process of understanding the conceptual transformations being applied to data sets.
+
+\vspace{0.5cm}
+In the second part of our bi-weekly assignment, we were tasked with coding solutions using basic mathematical operators – a brute force approach. The modular foundational step was crucial in grasping the underlying principles of the problems we were tackling. Subsequently, Dr. Zarringhalam guided us in utilizing advanced software packages, mirroring real-world applications of the concepts we were learning. This practical aspect of the coursework not only solidified my theoretical understanding but also provided valuable insights into how these mathematical tools are applied in professional settings.
+
+\vspace{0.5cm}
+For each modular block, he would first illustrate the abstract 'movement' of the operators on the chalkboard. These visual representations were crucial in translating abstract mathematical ideas into a form we could easily grasp and follow. After laying this groundwork, he would methodically work through sample problems for each substep, ensuring a clear and comprehensive understanding at each stage.
+
+\vspace{0.5cm}
+The culmination of this process involved solving a comprehensive problem that synthesized all the individual steps, effectively weaving them into a cohesive whole. This approach was instrumental not just in understanding the theory, but also in its practical application. When it came to coding, the modular understanding made the process straightforward. We coded in a way that mirrored the mathematical operations, which enhanced our grasp of how data was manipulated and transformed.
+
+\vspace{0.5cm}
+Moreover, learning to use professional software packages, similar to those employed in workplaces and research environments, added a crucial dimension to our learning. This provided insights into their practical applications. Each step of Dr. Zarringhalam's teaching was meticulously designed, seamlessly connecting abstraction, visualization, mathematical formulation, and real-world application, offering us a comprehensive and integrated learning experience.
+
+\vspace{0.5cm}
+Dr. Zarringhalam's support for students is not just timely but also remarkably effective. He has a knack for addressing student queries in a way that doesn't just solve the immediate problem but also enhances overall understanding.
+
+\vspace{0.5cm}
+A memorable instance was when a student struggled with a complex algorithm, Eigenvalue decomposition, specifically on the covariance matrix, on understanding the change of basis. Dr. Zarringhalam not only dedicated extra time after class to explain this concept for 2x2 matrices, but also 3x3 matrices using both unit circles and spheres. He conscientiously followed up in subsequent classes to ensure all students fully comprehended the topic.
+
+\vspace{0.5cm}
+Furthermore, in the next class, he had devised a new lesson plan addressing this specific issue. This plan included a practical application of the eigenvalue decomposition on covariance matrices for principal component analysis, an addition that was not originally planned. This impromptu lesson exemplified Dr. Zarringhalam's ability to create engaging and informative content on the fly, all while maintaining the course's scheduled progression. His adaptability and commitment to student understanding were evident in these actions.
+
+\vspace{0.5cm}
+My academic journey with Dr. Kourosh Zarringhalam has been nothing short of transformative. His unique blend of structured, modular teaching, coupled with practical applications and personal engagement, has profoundly deepened my understanding and appreciation of mathematics. Dr. Zarringhalam's ability to connect abstract concepts to real-world applications, along with his approachable demeanor and effective communication, has not only enhanced my learning but also kindled a passion for the subject.
+
+\vspace{0.5cm}
+Given these experiences, I am eager to enroll in further graduate-level courses under his guidance. The depth of knowledge I have gained, the growth in my analytical and problem-solving skills, and the confidence I have developed in tackling complex mathematical challenges are testaments to Dr. Zarringhalam's exceptional teaching capabilities. I am confident that continuing my education with him will further enrich my academic and professional development.
+
+\vspace{0.5cm}
+I wholeheartedly endorse Dr. Zarringhalam for the promotion to full Professor. His dedication to student success, innovative teaching methods, and ability to inspire and challenge his students are qualities that make him an invaluable asset to the University of Massachusetts Boston's Department of Mathematics. His influence extends beyond the classroom, shaping the careers and lives of his students. It is educators like Dr. Zarringhalam who define and elevate the standards of academic excellence.
+\vspace{0.5cm}
+
+\makeletterclosing
+
+\end{document}

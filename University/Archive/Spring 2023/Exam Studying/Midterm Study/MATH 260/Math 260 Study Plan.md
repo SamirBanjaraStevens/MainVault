@@ -1,0 +1,47 @@
+#### MATH 260
+- Practice Problems 
+	- Friedburg 
+		- Ch 1
+		- Ch 2
+		- Ch 3
+		- Ch 4
+		- Ch 5
+- QuizLit
+	- How to Do Practice Problems
+	- Vocabs
+- WebWork
+	- 01
+	- 02
+	- 03
+	- 04
+	- 05
+
+**Topics to cover**
+- Vector Spaces
+	- Vector Spaces
+	- Subspaces
+	- Linear Combinations and Systems of Linear Equations 
+	- Linear Dependence and Independence
+	- Bases and Dimension
+	- Maximal Linearly Independent Subsets
+- Linear Transformations and Matrices
+	- Linear Transformations, Null spaces and Ranges
+	- The Matrix Composition of a Linear Transformation
+	- Composition of Linear Transformations and Matrix Multiplication
+	- Invertibility and Isomorphism
+	- The change of Coordinate Matrix (Change of basis)
+- Elementary Matrix Operations and systems of Linear Equations 
+	- Elementary Matrix Operations and Elementary Matrices
+	- The Rank of a Matrix and Matrix Inverses
+	- Systems of Linear Equations -Theoretical Aspects
+	- Systems of Linear Equations-Computational Aspects
+- Determinants
+	- Of Order $2$
+	- Of Order $n$
+	- Properties of determinants
+	- Characterization of the determinant
+- Diagonalization
+	- Eigenvalue and Eigenvectors
+	- Diagonlizability
+	- Matrix Limites and Markov Chains$^*$
+	- Invariant Subspaces and Cayley-Hamilton Theorem$^*$ 

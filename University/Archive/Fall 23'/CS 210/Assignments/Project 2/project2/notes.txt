@@ -1,0 +1,28 @@
+1. Provide a high-level description (ie, using minimal amount of technical
+   jargon) of the project in no more than 200 words.
+
+   The project description consists of four problems.
+
+Problem 1 is about creating a double-ended queue (deque) using a linked list data structure. The deque supports adding and removing items from both the front and back ends. The implementation involves creating a LinkedDeque, initializing the deque as empty, and implementing APIs for adding and removing items.
+
+Problem 2 involves sorting strings using the deque created in problem 1. The program accepts strings from the user, stores them in the deque, and uses the deque operations to sort the strings. The implementation uses if-else statements to compare the strings and rearrange them in the deque.
+
+Problem 3 is similar to problem 1 but with the additional feature of randomly selecting an item to be removed. The deque also changes its size depending on whether it is full or 25% full.
+
+Problem 4 uses the random queue created in problem 3 to sample integers from a given range. Depending on the mode (+ or -), the sampled integers are either replaced or not replaced, and the resulting string is outputted.
+
+Each problem has its own set of issues and resolutions, including AssertionFailedErrors and ArrayIndexOutOfBoundsExceptions.
+
+2. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+ Exercises from class.
+
+3. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   none

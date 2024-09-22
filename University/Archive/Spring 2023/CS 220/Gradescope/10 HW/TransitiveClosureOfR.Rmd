@@ -1,0 +1,95 @@
+---
+title: "TransitiveClosureOfR"
+author: "Samir Bnjara"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Let $r$ be a relation on the set $A = \{\text{Kira}, \text{Frank}, \text{Lola}, \text{Sarah}, \text{Judy}, \text{Reuben}\}$ 
+$n = 6$
+with the relation matrix, 
+$$
+R =
+\begin{bmatrix}
+0 & 1 & 1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+\end{bmatrix}
+$$
+
+The matrix of the transitive closure $R^+$, 
+- can be computed by the equation $R^+ = R + R^2 + R^3 + \cdots + R^n$.
+$$
+R^2 =
+\begin{bmatrix}
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+\end{bmatrix}
+$$
+$$
+R^3 =
+\begin{bmatrix}
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+\end{bmatrix}
+$$
+$$
+R^4 =
+\begin{bmatrix}
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+\end{bmatrix}
+$$
+$$
+R^5 =
+\begin{bmatrix}
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+\end{bmatrix}
+$$
+$$
+R^6 =
+\begin{bmatrix}
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+\end{bmatrix}
+$$
+Thus, $R^+ = R^1 + R^2 + R^3 + R^4 + R^5 + R^6$
+$$R^+ = 
+\begin{bmatrix}
+0 & 1 & 1 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+\end{bmatrix}
+$$
+

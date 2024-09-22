@@ -1,0 +1,3 @@
+- In Part I, you will read an article by anthropologist Kilton Stewart who stated that Senoi dream theory/practices were central to the healthy and peaceful lifestyle of the Senoi, and an article by Johnstone who suggests how these Senoi practices could be applied in industrial society. 
+- In Part II, you will read a critique of Stewart and the application of Senoi dream practices by G. William Domhoff. 
+- In Part II, you will watch a film in which a woman found some healing in her dreams, and also read some articles on healing in and with dreams.

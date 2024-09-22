@@ -1,0 +1,349 @@
+---
+title: "math426_math_626_assignment_3_samir_banjara"
+author: "Your Name"
+date: "02/09/2023"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Question1:** Calculate the SVD of the following matrix manually. Verify our answer by calculating the SVD in R.
+
+$$
+A = \begin{bmatrix} -2 & 11 \\ -10 & 5 \end{bmatrix}.
+$$
+
+-   **Solution**:
+
+First we compute the singular values $\sigma_i$ by finding the eigenvalues of $AA^T$ and $A^TA$,
+
+$$
+AA^T = 
+\begin{bmatrix}
+125 & 75\\
+75 & 125\\
+\end{bmatrix}
+$$
+
+characteristic polynomial is det($AA^T-\lambda I$) = $(\lambda - 50)(\lambda-200)$
+
+and so eigenvalues are of $A^TA$ and $AA^T$ are 
+
+$$
+\begin{aligned}
+\lambda_1 &= 200\\
+\lambda_2 &= 50\\
+\lambda_3 &= 0
+\end{aligned}
+$$
+
+and 
+
+$$
+\begin{aligned}
+\sigma_1 &= 10\sqrt{2}\\
+\sigma_2 &= 5\sqrt{2}
+\end{aligned}
+$$
+
+and so, 
+
+$$
+\Sigma = 
+\begin{bmatrix}
+10\sqrt{2} & 0\\
+0 & 5\sqrt{2}
+\end{bmatrix}
+$$
+
+Note: singular values in $\Sigma$ are square roots of eigenvalues of $AA^T or A^TA$ in descending order
+
+We know that $A^TA$ is symmetric, and so the eigenvectors will be orthogonal.
+
+Now we find the right singular vectors (orthonormal set of eigenvectors that make up columns of V)
+
+-   for $\lambda = 200$ we have,
+
+$$
+A^TA-200I = 
+\begin{bmatrix}
+-75 & 75\\
+75 & -75
+\end{bmatrix}
+$$
+
+which row-reduces to
+
+$$
+\begin{bmatrix}
+1 & -1\\
+0 & 0
+\end{bmatrix}
+$$
+
+A unit length vector in the null space is
+
+$$
+v_1 = 
+\begin{bmatrix}
+\frac{2}{\sqrt{2}}\\
+\frac{2}{\sqrt{2}}
+\end{bmatrix}
+$$
+
+-   for $\lambda = 50$ we have
+
+$$
+A^TA-50I = 
+\begin{bmatrix}
+75 & 75\\
+75 & 75
+\end{bmatrix}
+$$
+which row-reduces to
+$$
+\begin{bmatrix}
+1 & 1\\
+0 & 0
+\end{bmatrix}
+$$
+
+A unit length vector in the null space is
+
+$$
+v_2 = 
+\begin{bmatrix}
+-\frac{2}{\sqrt{2}}\\
+\frac{2}{\sqrt{2}}
+\end{bmatrix}
+$$
+
+compute V by $\sigma v_i = Au_i$ or $v_i = \frac{1 }{\sigma}Au_i$
+
+$$
+v_1=
+\frac{1}{10\sqrt{2}} \ \cdot
+\begin{bmatrix}
+-2 & -10\\
+11 & 5
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+\frac{2}{\sqrt{2}}\\
+\frac{2}{\sqrt{2}}
+\end{bmatrix}
+= 
+\begin{bmatrix}
+-\frac{3}{5}\\
+\frac{4}{5}
+\end{bmatrix}
+$$
+
+$$
+v_2=
+\frac{1}{5\sqrt{2}} \ \cdot
+\begin{bmatrix}
+-2 & -10\\
+11 & 5
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+-\frac{2}{\sqrt{2}}\\
+\frac{2}{\sqrt{2}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+-\frac{4}{5}\\
+-\frac{3}{5}
+\end{bmatrix}
+$$
+
+
+Therfore,
+$$
+V =
+\begin{bmatrix}
+-\frac{3}{5} & -\frac{4}{5}\\
+\frac{4}{5} & -\frac{3}{5}
+\end{bmatrix}
+$$
+
+The columns of the matrix $U$ are the normalized unit length vectors (left singular vectors)
+- which is obtained by dividing each coordinate of the given vector its the magnitude.
+
+thus,
+$$
+U = 
+\begin{bmatrix}
+\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2}\\
+\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+\end{bmatrix}
+$$
+
+
+Resulting in the final SVD of: $A = U\Sigma V^*$
+
+$$
+A = U\Sigma V^* =
+\begin{bmatrix}
+\frac{2}{\sqrt{2}} & -\frac{2}{\sqrt{2}}\\
+\frac{2}{\sqrt{2}} & \frac{2}{\sqrt{2}}
+\end{bmatrix}
+\begin{bmatrix}
+10\sqrt{2} & 0\\
+0 & 5\sqrt{2}
+\end{bmatrix}
+\begin{bmatrix}
+-\frac{3}{5} & -\frac{4}{5}\\
+\frac{4}{5} & -\frac{3}{5}
+\end{bmatrix}
+$$
+
+**Question2:** Let $A$ be a full ranked $m \times m$ matrix and let $B$ be an $m \times n$ matrix. Show that $rank(AB) = rank(B)$.
+
+-   **Solution**
+
+$range(A) = column(A) = span\{a_1,\cdots,a_n\}$
+
+since, given $y \in span(AB)$
+
+we can choose $x\in F$
+
+and then, we have $y=(AB)x = A(bx) \in span(A)$
+
+-   or $AB=\{Ab_1, \cdots, Ab_n\}$ and $Ab_j \in span(A)$
+
+-   So, each of the columns of AB is contained in $span(A)$
+
+That is, $rank(AB) \leq rank(A)$
+
+Hence, $span(AB) \subseteq span(A)$
+
+Because $span(AB) \subseteq span(A)$,
+
+any basis for $span(AB)$ can be extended to a basis for $span(A)$
+
+and so $dim(span(AB))\leq dim(span(A))$
+
+note that $null(B)\subseteq null(AB)$
+
+since given $x \in null(AB)$
+
+we have $(AB)x = A(Bx) = A0 = 0$
+
+so that $x\in null(AB)$
+
+Since $null(B) \subseteq null(AB)$
+
+we have, $dim(null(B)\leq dim(null(AB)$
+
+that is, $nullity(B)\leq nullity(AB)$
+
+thus,
+
+$$
+\begin{aligned}
+\begin{split}
+rank(AB) &= n - nullity(AB)\leq n - nullity(B)\\
+&= rank(B)
+\end{split}
+\end{aligned}
+$$
+
+Different Solution
+
+Because the multiplication of $A^TB$ results in a each of its column as linear combination of the rows of $B$ and columns of $A^T$
+
+$$
+\begin{aligned}
+\begin{split}
+rank(AB) &= rank((AB)^T)\\
+&=rank(A^TB^T)\leq rank(B^T)\\
+&=rank(B)
+\end{split}
+\end{aligned}
+$$
+
+**Question3:** Two matrices $A$ and $B$ in $\mathbb{C}^{m \times m}$ are unitarily similar if $A = Q B Q^*$.
+
+Show that $A$ and $B$ are unitarily similar then they have the same singular values.
+
+-   **solution**
+
+By Theorem (5.4)
+
+The nonzero singular values of $A$ are square roots of the nonzero eigenvalues of $AA^*$ (these matrices have the same nonzero eigenvalues)
+
+Because $A$ and $B$ are unitarily similar,
+
+for $A, B\in \mathbb{C}^{m\times m}$ we have, 
+
+$$
+\begin{aligned}
+\begin{split}
+A^* &= A^-1           &   B^* &= B^-1\\
+AA^* &= I             &   BB^* &= I
+\end{split}
+\end{aligned}
+$$ 
+
+and 
+
+$$
+\begin{aligned}
+A &= QBQ^*\\
+B &= QAQ^*
+\end{aligned}
+$$
+
+Now suppose $B=U\Sigma V^*$ is a SVD for $B$, with $U$ and $V$ unitary and $\Sigma$ a diagonal matrix wiht decresing $\sigma_i$ values
+
+becasue, $A=QBQ^*$ and $B=QAQ^*$ with $Q$ unitary, then
+
+$$
+\begin{aligned}
+\begin{split}
+A &= (U\Sigma V^{*})^{*}\,(U\Sigma V^{*})\\ 
+&= V\Sigma^{*}U^{*}U\Sigma V^{*}\\ 
+&= VV^*(\Sigma^{*}\Sigma)\\ 
+or &=(QU)\Sigma (V^*Q^*)
+\end{split}
+\end{aligned}
+$$ 
+
+And 
+
+$$
+\begin{aligned}
+B &= (U\Sigma V^{*})^{*}\,(U\Sigma V^{*})\\ 
+&= V\Sigma^{*}U^{*}U\Sigma V^{*}\\ 
+&= VV^*(\Sigma^{*}\Sigma)\\ 
+or &=(QU)\Sigma (V^*Q^*)
+\end{aligned}
+$$
+
+we are factorizing $A$ using the the singular values of $B$ The product of unitary matrices is unitary thus, these are SVD's for A and B
+
+We see that $AA^*$ is similar to $\Sigma\Sigma^*$ & hence has the same $n$ eigenvalues, also $BB^*$ is similar to $\Sigma\Sigma^*$ & Hence has same $n$ eigenvalues, $AA^*$ and $BB^*$ have the same eigenvalues(singular values).
+
+Unitarily similar implies same eigenvalues or singular values.
+
+-   Show that the converse is not true by providing a counter example (Hint: Start with the matrix $\Sigma$ and construct $A$ and $B$, one of which is symmetric and the other is not).
+
+Show that $A$ and $B$ are unitarily similar then they have the same singular values. converse: If $A$ and $B$ have the same singular values then $A$ $B$ are unitarily similar.
+
+We need to show that $A$ and $B$ are not unitarily similar.
+
+Let $B$ non-symmetric (non square matrix), In the reduced SVD of $B$,
+
+$$B = \hat{U} \hat{\Sigma} V^{*}$$
+
+The singular values are in a square diagonal matrix $\hat{\Sigma}$.
+
+Construct a square matrix $A$ with the same singular values as $B$ by multiplying $\hat{\Sigma}$ by unitary $U$ and $V$. (Factorization of $A$ using $B$)
+
+However no unitary matrix $Q$ exists such that $A = QBQ^*$ because A and Q are square and $B$ is not square.

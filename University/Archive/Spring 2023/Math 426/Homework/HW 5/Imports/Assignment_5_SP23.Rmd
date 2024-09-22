@@ -1,0 +1,76 @@
+---
+title: "Assignment 5"
+author: "SAMIR BANJARA"
+date: "03/23/2023"
+output:
+  pdf_document: default
+html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Question1:** Write an `R` program to implement QR factorization using
+
+1.  Classic Gram Schmidt (CGS)
+2.  Modified Gram Schmidt (MGS) by modifying CGS as discussed in class.
+3.  Modified Gram Schmidt as outlined in the textbook;
+4.  Householder method.
+
+Your program should take a matrix A as input and return both Q and R as output. Apply your code to the following matrix:
+
+```{=tex}
+\begin{equation*}
+\begin{bmatrix}
+1 & 2 \\
+0 & 3 \\
+-1 & 4
+\end{bmatrix}.
+\end{equation*}
+```
+Compare your result and verify that A = QR.
+
+------------------------------------------------------------------------
+
+**Solution** \*\*\*
+
+1.  Classic Gram Schmidt (CGS)
+2.  Modified Gram Schmidt (MGS) by modifying CGS as discussed in class.
+3.  Modified Gram Schmidt as outlined in the textbook;
+4.  Householder method.
+
+Let 
+$$
+\begin{aligned}
+A_{CGS} &= \text{ Classic Gram Schmidt}\\
+A_{MGS} &=\text{ Modified Gram Schmidt}\\
+A_{TMGS} &=\text{ Text Book Modified Gram Schmidt}\\
+A_{HH} &=\text{ Householder Method}\\
+\end{aligned}
+$$
+
+v
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

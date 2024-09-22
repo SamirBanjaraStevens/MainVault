@@ -1,0 +1,69 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<< 8 >>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between <<< and >>> signs below (eg, <<<3>>>).
+
+   <<< 2 >>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+   None
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Array Percolation)
+       Approach: Initally started out problem by figuring out the math, Problem 1 is asking us to simulate the creation
+       and flow of 'water' through arrays. We are given 5 api to model the system. I initialized the instance variable,
+       size of the array, the open and black 'cells' of the array, and the number of open sites. Start with a warning,
+       illegal n if less than 0, because we cant have a 0 size array. then we work on open. check index of arrays for
+       right size, then check if open or not.  isOpen, checks the index again, then return the boolean value of the
+        array. isFull, is the opposite of isOpen. Check index, then creat a new n size index, then fill the array with
+        the first row by calling floodFill. Once the arrays are flooded, we call Opensites to view number of opensites
+        in  array that did not get filled.
+
+        Then Inact the floodFill, we look at one cell in array, then the top, bottom, left, right of that cell. This
+        will onlt return if i or j is out bounds meaning, it is not opne, or it is full.
+       In the case of void open,
+
+       Issues and resolution: Had issue with the output of illegal n and ' illegal i or j' not showing up correctly. I
+       had use symbolic logic notation instead of given directions.
+
+   Problem 2 (Union Find Percolation)
+       Approach: Goal was to use the weighted quick union UF, and contsruckt a size n percolation system with all sites
+       blocked. Initialized new instance variables source (0) and sink (n^2 + +1) which are virtual bottom and top.
+       Directions called to also resolve bash wash poblem, caused by use of source and sink. So first, we open the sites
+       , if not done so already, we cant use same opening technique as used in Array Percolation. So inssted of using
+       this.Open, we had to do !isOpen(i,j) to check if it was open or not. We then have to check if newighbor of to the
+       north, east, west south of the cell, we are lookign at is open or not also. If they are ope, then they are
+       connected and can fill other cells. The isOpen, checkes for open. We then return the increments number of open
+       sites calcuated. Then calcuate boolean value if it p[eroclated or not from source to sink, to check if is blocked
+       or not.
+
+
+       Issues and resolution: ...
+
+   Problem 3 (Estimation of Percolation Threshold)
+       Approach: Goal was to Calculate the percolation threshold of the virtual array. We can calcuate the threshhold
+       by calculating the 95 lower and upper confidence numbers. Biggest thing we have to code is the percolationStats.
+       Done so by checking index, initizlating instance variable, independent experiments and the thresholds for each
+       experiemnts, so we can average it later. We use the previous model from UFPercilation to conduct experinmets abd
+       store sata inb a array called x. So, for expermint, we continuouslly chose cell (i,j) at random and opne it if not
+       open to let it percolate. Used StdRandom,Uniform from 0 to n, to get boudns of the percolating array. We
+       calcuate the threshold and and store it in x. Using the data stored in x, use we stdStats to get mean abd std dev
+       of the the threshold in x. Then use that to clacuate confidence low and high.
+
+       Issues and resolution: ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...

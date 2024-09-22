@@ -1,0 +1,17 @@
+{
+  "accentColor": "",
+  "cssTheme": "AnuPpuccin",
+  "translucency": false,
+  "theme": "obsidian",
+  "baseFontSize": 25,
+  "enabledCssSnippets": [
+    "Untitled",
+    "extended color schemes"
+  ],
+  "textFontFamily": "Rubik",
+  "interfaceFontFamily": "Rubik,Overpass",
+  "showViewHeader": true,
+  "nativeMenus": false,
+  "monospaceFontFamily": "JetBrains Mono NL",
+  "baseFontSizeAction": false
+}

@@ -1,0 +1,3 @@
+**Due March 30, 11.59 PM**
+
+I would like to make this an open discussion of the readings rather than ask you to answer specific questions. What do you think of the idea of treating our dreams as 'real?' How did any of the readings speak to this idea? How does this idea impact how you understand your own dreams? Please add any other thoughts or questions you have and try to respond to another post to create a discussion.

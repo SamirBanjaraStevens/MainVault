@@ -1,0 +1,202 @@
+---
+title: "math426_math_626assignment_2_samir_banjara"
+author: "Samir Banjara"
+date: "02/08/2023"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Question1:** Let $Q \in \mathbb{C}^{m \times m}$. Show that the following statements are equivalent
+
+1.  $Q$ is an orthogonal matrix.
+
+Suppose, $Q$ is an orthogonal matrix, then the pairwise elements of any $m$ mutual othronormal vectors of $Q$, $\vec{n_{1}}, \vec{n_{2}},\, \cdots ,\, \vec{n_{m}} \in \mathbb{C}^{m}$ are orthogonal.
+
+$$
+\left \langle n_{j}, n_{k} \right \rangle \, = \delta_{jk}
+$$
+
+then,
+
+$$
+Q = 
+\begin{bmatrix}
+\vec{n_{1}} & \vec{n_{2}} & \cdots & \vec{n_{m}}
+\end{bmatrix}
+$$
+
+and,
+
+$$
+Q^{*} 
+= 
+\begin{bmatrix}
+\vec{n_{1}^{*}}\\
+\vec{n_{2}^{*}}\\
+\vdots\\
+\vec{n_{m}^{*}}
+\end{bmatrix}
+$$
+
+thus,
+
+$$ 
+QQ^{*} 
+= 
+\begin{bmatrix} 
+\vec{n_{1}} & \vec{n_{2}} & \cdots & \vec{n_{m}}
+\end{bmatrix}
+\,
+\begin{bmatrix}
+\vec{n_{1}^{*}}\\ 
+\vec{n_{2}^{*}}\\ 
+\vdots\\ 
+\vec{n_{m}^{*}}
+\end{bmatrix}
+=
+$$
+
+$$
+=
+\begin{bmatrix}
+\vec{n_{1}}\,\vec{n_{1}^{*}} & \cdots & \vec{n_{m}}\,\vec{n_{1}^{*}}\\
+\vdots & \ddots & \vdots\\
+\vec{n_{1}}\,\vec{n_{m}^{*}} & \cdots & \vec{n_{m}}\,\vec{n_{m}^{*}}\\
+\end{bmatrix}
+=
+$$
+
+$$
+=
+\begin{bmatrix}
+\left \langle \vec{n_{j}}, \vec{n_{k}}\right\rangle\\
+\end{bmatrix}
+= 
+\begin{bmatrix}
+\delta_{jk}
+\end{bmatrix}
+=
+I_{m} \quad\quad \text{for}\ 1\leq j,\,k \leq m
+$$
+
+Hence the magnitude of two vectors $Q$ and $Q^{*}$ is equal to the identity vector $I_{m}$ and orthonormal.
+
+2.  $||Q\mathbf{x}|| = ||\mathbf{x}||$.
+
+From our previous work on Question 1.1, we assumed $Q$ to be orthogonal and hence the product of matrix $Q$ and its complex conjugate $Q^{*}$ is equal to be the identity vector.
+
+$$
+QQ^{*} = I_{m}
+$$
+
+Let $A$ be an $n\times n$ matrix. Then, $A$ is invertible if there exists an $n\times n$ matrix $B$ such that $AB = BA = I_{n}$. Then $B$ must be the inverse of A, denoted $A^{-1}$.
+
+We know that, a orthogonal matrix is a square $m\times m$ matrix that satisfies $M^{*}\, M = I_{m}$ and the inverse must satisfy, $A\, A^{-1} = I_{n}$,
+
+thus if an inverse of an matrix is equal to its adjoint, then it is orthogonal.
+
+$$
+\|\mathbf{x}\| = \|Q\mathbf{x}\|
+$$
+
+$$
+\| \mathbf{x}\| = \|Q\,Q^{-1}| \ \|\mathbf{x}\|
+$$
+
+$$
+\text{or} \quad \|\mathbf{x}\| = |Q\,Q^{*}| \ \|\mathbf{x}\| 
+$$
+
+$$
+\|\mathbf{x}\| =I_{m}\cdot\ \|\mathbf{x}\|
+$$
+
+$$
+\|x\| = \|x|\
+$$
+
+3.  $(Q\mathbf{x})^{*}(Q\mathbf{y}) = x^{*}y$
+
+Using the property, $(\alpha \mathbf{x})^{*} (\beta \mathbf{y}) = \alpha^{*}\, \beta\, \mathbf{x}^{*}\, \mathbf{y}$
+
+$$
+(Q \mathbf{x})^{*} \, (Q \mathbf{y}) = \mathbf{x}^{*} \, \mathbf{y}\, Q\, Q^{*}
+= \mathbf{x}^{*} \, \mathbf{y} \, I_{n}
+= \mathbf{x}^{*} \, \mathbf{y}
+$$
+
+We have thus proved all statements to be true are equivalent.
+
+**Question2:** Let $A \in \mathbb{C}^{m \times m}$ be Hermitian. Show that the following statements are true:
+
+1.  All eigenvalues of $A$ are real.
+2.  If $\mathbf{x}$ and $\mathbf{y}$ are eigenvectors corresponding to distinct eigenvalues, then $\mathbf{x}$ and $\mathbf{y}$ are orthogonal.
+
+Let $\lambda$ be an arbitrary eigenvalue of an Hermitian matrix $A$ and let $x$ be an eigenvector corresponding to the eigenvalue $\lambda$
+
+Then we have $Ax = \lambda x$
+
+Multiply both sides by $x^{-T}$ where,$x^{-T} = x^{*}$ thus,
+
+$$
+x^{*}(A x) = x^{*}(\lambda x) = \lambda x^{*} x = \lambda \|x\|
+$$
+
+or
+
+$$
+x^{*}(Ax)= (Ax)^{*} \ \overline{x} = x^{*}\, A^{*}\, \overline{x}
+$$
+
+Dot product is communicative, let $u = \overline{x}, \ v = Ax$
+
+Thus, $u\cdot v = u^{*}v = v^{*}u = v\cdot u$ or $x^{*}A^{*}\, \overline{x} = \lambda \, \|x\|$
+
+taking the complex conjugate of this equality we have,
+
+$$
+x^{*}A^{*} =\, \overline{\lambda}\, \|x\|
+$$
+
+since, matrix A is Hermitian, we have $A^{*} = A$
+
+Which results in,
+
+$$
+\overline{\lambda}\, \|x\| = x^{*}Ax = x^{*}\lambda x = \lambda \|x\|
+$$
+
+Because $x$ is an eigenvector, $x \neq 0$ and $\|x\| \neq 0$, $\lambda = \overline{\lambda}$
+
+thus, eigenvalue $\lambda$ is a real number.
+
+Additionally, from the equality,
+
+$$
+x^{*}(A x) = x^{*}(\lambda x) = \lambda x^{*} x = \lambda \|x\|
+$$
+
+the we see that $xAx ^{*} = \lambda\, x\,x^{*}$ is a complex number
+
+but $A^{*} = A$, $v \neq 0$ and given $xA = \lambda x$
+
+both $xAx ^{*}$ and $x\, x^{*}$ are positive real numbers, it follows that $\lambda$ is also real.
+
+Since we have $x$ and $y$ as eigenvectors with distinct real eigenvalues, which we just showed true for every Hermitian matrix, because we assumed $\lambda$ was arbitrary.
+
+Now lets supposed for $x$ and $y$ as eigenvectors we have $\lambda$ and $\mu$ as distinct eigenvalues. we have from work above
+
+because we showed $y\, (Ax) = (\lambda x)\, y = (yA)\, x = (\mu y)\,x = (\mu x)\, y$
+
+and so, $(\lambda x)\, y = (\mu x)\, y$
+
+then $(\lambda - \mu)\, x \cdot y = 0$ Since $\lambda - \mu \neq 0$, then $x \cdot y = 0$ which satisfies the condition for two vectors to be orthogonal it's dot product must be 0.
+
+$$
+x \perp y
+$$ Thus, eigenvectors corresponding to distinct real eigenvalues of the Hermitian matrix $A \in \mathbb{C}^{m\times m}$ are orthogonal.

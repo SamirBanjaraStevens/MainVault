@@ -1,0 +1,58 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<< 8 >>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between <<< and >>> signs below (eg, <<<3>>>).
+
+   <<< 2 >>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+   None
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Array Percolation)
+      Approach: The objective was to simulate the flow of 'water' through arrays, reflecting the creation and progression of water through different cells.
+      This problem required the application of five APIs to model the system accurately.
+      The instance variables such as the size of the array, the status of the cells (open or blocked), and the number of open sites were initialized.
+      The solution began with issuing a warning for illegal 'n' values less than 0, as an array of size 0 is not permissible.
+      The functionality then progressed to checking the index sizes of arrays and evaluating whether they were open or not.
+      The methods isOpen and isFull returned boolean values representing the status of the array cells after performing necessary checks and index evaluations.
+      The floodFill method was crucial in filling the array based on the status of adjacent cells.
+             
+      Issues and resolutions: 
+         The primary challenge was the incorrect display of 'illegal n' and 'illegal i or j'.
+         The resolution involved modifying the symbolic logic notation to align with the given directions.       
+
+   Problem 2 (Union Find Percolation)
+       Approach: The aim was to employ the weighted quick union UF and construct a percolation system of size 'n' with all sites blocked.
+       This entailed initializing new instance variables like source (0) and sink (n^2 +1), which act as virtual top and bottom.
+       Opening sites was not straightforward; it was essential to check the status of adjacent cells (north, east, west, south) to determine if they were open and could consequently fill other cells.
+       This involved using alternative methods to check if a cell was open and then connecting open neighboring cells.
+       The boolean value calculated finally represented whether the system percolated from source to sink.
+
+
+       Issues and resolution: ...
+
+   Problem 3 (Estimation of Percolation Threshold)
+       Approach: The task was to determine the percolation threshold of the virtual array by computing the 95% confidence interval.
+       The major coding effort was in the percolationStats method, where indices were checked, and instance variables for independent experiments and thresholds were initialized.
+       The previous model from UFPercolation was leveraged to conduct experiments and store data in an array 'x'.
+       Cells were continuously chosen at random, and if they weren’t open, they were opened to allow percolation.
+       The threshold was then calculated using this data, and statistical methods were used to find the mean, standard deviation, and confidence interval of the percolation thresholds.
+
+       Issues and resolution: ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...

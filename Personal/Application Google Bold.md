@@ -1,0 +1,16 @@
+Application questions
+##### Question
+BOLD Immersion is an opportunity to grow your skills, build your network, and learn about the business side of Google. In 200 words or less, how would you benefit from participating in BOLD Immersion?
+
+###### Answer
+The business side of Google is a far cry from the greasy floors and malfunctioning appliances that once marked my summers, yet it calls to the same restless curiosity. BOLD Immersion isn't just a program—it's the deep water where things get real. I crave the raw, unfiltered experience, the kind that leaves a mark.
+
+Imagine this: coding alongside those who've fought in the trenches, not just skimmed the surface. Engaging with minds that don't just theorize but transform. Here, I wouldn't be a spectator in the cheap seats; I'd be in the fight, absorbing the wisdom earned through grit and innovation.
+
+I'd bring my relentless work ethic, a thirst for knowledge that textbooks can't quench, and the sheer will to dive deep into challenges. This isn't about promises—it's about the damn fight, the hard-earned growth that comes from real-world immersion. At BOLD, I'd learn to bridge the gap between the ordinary and the extraordinary, turning raw potential into tangible impact. Let me in.
+
+##### Question
+At Google, we build for everyone, which means that we believe that a diversity of perspectives, ideas, and cultures leads to the creation of better products and services. In 200 words or less, tell us about a time where you benefited from, or a situation could have been improved from, having a diversity of perspectives.
+
+###### Answer
+The air hung thick with the smell of desperation and mescal. Across the chipped enamel tabletop, the old man, janky and tattred, a weathered map etched on sun-baked skin, challenged me with his gaze. Two gnarled fingers clung precariously to his teacup, testaments to a fight long ago lost. I, all bravado and sharp edges fresh off the boat, scoffed at his question – "You think you're tough, kid?" – and took a defiant drag from my cigarette. "Tough enough," I spat, the smoke stinging my own youthful naivety. He chuckled, a dry, hollow sound. Pointed to a weathered hand, two missing fingers. "Bullfight. Young and stupid, just like you." Silence settled, heavy and thick. The smoke stung my eyes. He finished his tea, set the cup down with a clatter. "Learned that day," he said, voice quieter now, "sometimes the biggest fights are the ones you walk away from." I stared at him. The defiance in his eyes, a quiet strength etched in the lines on his face. Shame, acrid and unexpected, burned a hole in my throat. I wasn't sure what I'd been trying to prove, but suddenly it seemed pointless. Pushing back my chair, the sound a gunshot in the tense silence. "Thank you," I mumbled, the word thick on my tongue. He just nodded, a flicker of something in his eyes – understanding, maybe. The world seemed different somehow, sharper, less like a fight waiting to happen. The fight I'd arrived ready for felt hollow, a childish tantrum in the face of a world that demanded more nuance, more… surrender.

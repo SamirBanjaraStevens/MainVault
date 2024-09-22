@@ -1,0 +1,136 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-isystem;/opt/anaconda3/include
+Id flags:  
+
+The output was:
+1
+ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/samirbanjara/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCloud Vault/University/Spring 2023/Cs 240/Assignments/Assignment 2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_e4bc1 && [1/2] Building C object CMakeFiles/cmTC_e4bc1.dir/CMakeCCompilerABI.c.o
+clang version 14.0.6
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /opt/anaconda3/bin
+clang-14: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ (in-process)
+ "/opt/anaconda3/bin/clang-14" -cc1 -triple x86_64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_OSX -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=13.1 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 609 -v "-fcoverage-compilation-dir=/Users/samirbanjara/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCloud Vault/University/Spring 2023/Cs 240/Assignments/Assignment 2/cmake-build-debug/CMakeFiles/CMakeTmp" -resource-dir /opt/anaconda3/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_e4bc1.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_e4bc1.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /opt/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /opt/anaconda3/lib/clang/14.0.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 "-fdebug-compilation-dir=/Users/samirbanjara/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCloud Vault/University/Spring 2023/Cs 240/Assignments/Assignment 2/cmake-build-debug/CMakeFiles/CMakeTmp" -ferror-limit 19 -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcolor-diagnostics -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e4bc1.dir/CMakeCCompilerABI.c.o -x c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCCompilerABI.c
+clang -cc1 version 14.0.6 based upon LLVM 14.0.6 default target x86_64-apple-darwin22.3.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/anaconda3/include
+ /opt/anaconda3/lib/clang/14.0.6/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+[2/2] Linking C executable cmTC_e4bc1
+FAILED: cmTC_e4bc1 
+: && /opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/opt/anaconda3/lib -L/opt/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_e4bc1.dir/CMakeCCompilerABI.c.o -o cmTC_e4bc1   && :
+clang version 14.0.6
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /opt/anaconda3/bin
+ "/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /opt/anaconda3/lib/libLTO.14.dylib -dynamic -arch x86_64 -platform_version macos 13.0.0 13.1 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_e4bc1 -L/opt/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /opt/anaconda3/lib -v CMakeFiles/cmTC_e4bc1.dir/CMakeCCompilerABI.c.o -lSystem /opt/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-530
+BUILD 07:42:29 Sep  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/opt/anaconda3/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/samirbanjara/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCloud Vault/University/Spring 2023/Cs 240/Assignments/Assignment 2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_d1409 && [1/2] Building C object CMakeFiles/cmTC_d1409.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_d1409
+FAILED: cmTC_d1409 
+: && /opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/opt/anaconda3/lib -L/opt/anaconda3/lib CMakeFiles/cmTC_d1409.dir/testCCompiler.c.o -o cmTC_d1409   && :
+ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-isystem;/opt/anaconda3/include
+Id flags:  
+
+The output was:
+1
+ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/samirbanjara/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCloud Vault/University/Spring 2023/Cs 240/Assignments/Assignment 2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_79f76 && [1/2] Building C object CMakeFiles/cmTC_79f76.dir/CMakeCCompilerABI.c.o
+clang version 14.0.6
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /opt/anaconda3/bin
+clang-14: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ (in-process)
+ "/opt/anaconda3/bin/clang-14" -cc1 -triple x86_64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_OSX -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=13.1 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 609 -v "-fcoverage-compilation-dir=/Users/samirbanjara/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCloud Vault/University/Spring 2023/Cs 240/Assignments/Assignment 2/cmake-build-debug/CMakeFiles/CMakeTmp" -resource-dir /opt/anaconda3/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_79f76.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_79f76.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /opt/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /opt/anaconda3/lib/clang/14.0.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 "-fdebug-compilation-dir=/Users/samirbanjara/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCloud Vault/University/Spring 2023/Cs 240/Assignments/Assignment 2/cmake-build-debug/CMakeFiles/CMakeTmp" -ferror-limit 19 -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcolor-diagnostics -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_79f76.dir/CMakeCCompilerABI.c.o -x c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCCompilerABI.c
+clang -cc1 version 14.0.6 based upon LLVM 14.0.6 default target x86_64-apple-darwin22.3.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/anaconda3/include
+ /opt/anaconda3/lib/clang/14.0.6/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+[2/2] Linking C executable cmTC_79f76
+FAILED: cmTC_79f76 
+: && /opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/opt/anaconda3/lib -L/opt/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_79f76.dir/CMakeCCompilerABI.c.o -o cmTC_79f76   && :
+clang version 14.0.6
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /opt/anaconda3/bin
+ "/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /opt/anaconda3/lib/libLTO.14.dylib -dynamic -arch x86_64 -platform_version macos 13.0.0 13.1 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_79f76 -L/opt/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /opt/anaconda3/lib -v CMakeFiles/cmTC_79f76.dir/CMakeCCompilerABI.c.o -lSystem /opt/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-530
+BUILD 07:42:29 Sep  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/opt/anaconda3/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/samirbanjara/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCloud Vault/University/Spring 2023/Cs 240/Assignments/Assignment 2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_1cae3 && [1/2] Building C object CMakeFiles/cmTC_1cae3.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_1cae3
+FAILED: cmTC_1cae3 
+: && /opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/opt/anaconda3/lib -L/opt/anaconda3/lib CMakeFiles/cmTC_1cae3.dir/testCCompiler.c.o -o cmTC_1cae3   && :
+ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+

@@ -1,0 +1,1 @@
+Please post your thoughts on the two articles you read, one by Stewart and the other by Johnstone. Just share your thoughts, reactions, etc. No need to respond to others, though you may do so of course if you please.

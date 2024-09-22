@@ -1,0 +1,85 @@
+#### CS 220
+- Grade Scope
+	- Assignment 1
+		- Compound Propositions
+		- Propositional Functions 
+		- Tautologies and Contradictions
+		- Proof using applying laws if propositional logic
+		- Proof using rules of inference
+	- Assignment 2
+		- Direct Proofs
+		- Indirect Proofs
+		- Irrational numbers proofs
+		- Proof by cases
+			- Parity of numbers
+	- Assignment 3
+		- List elements of sets
+		- Identities of sets
+	- Assignment 4
+		- Power sets
+		- Cardinality of sets
+		- Set Operations
+		- Prove set operation statements true
+	- Assignment 5
+		- Range of set
+		- Roster function
+		- Properties of functions
+			- Surjective
+			- Injective 
+			- Bijective
+		- Find the function
+	- Assignment 6
+		- Function Proofs
+		- Inverse of Functions
+		- Log and Exponent rules
+	- Assignment 7
+		- Evaluate boolean algebra logical equation
+		- Minterm method
+		- Simplify the Boolean expresion 
+		- Boolean algebra rules 
+			- Addition and Multiplication
+	- Assignment 8 
+		- Equivalent boolean expressions
+		 - laws of boolean algebra to show equivalence 
+	- Assignment 9
+		- Relation in set notion
+		- In digraph notation
+		- Relation as a matrix
+		- Properties of relations 
+			- Reflexive
+			- Irreflexive
+			- Symmetric
+			- Antisymmetric
+			- Asymmetric
+			- Transitive
+			- Partial Ordering
+			- Total Ordering
+			- Equivalence ordering
+	- Assignment 10
+		- Transitive closure
+		- Transitive closure into set 
+		- What does transitive closure mean?
+		- How many different equivalence relations> or partial ordering? or total ordering?
+	- Assignment 11
+		- Algorithms in pseudo code
+	- Assignment 12
+		- Worst case time complexity
+		- Asymptotic upper bound for the time complexity using big o notion
+		- Diffrent notaions
+- Practice Problems
+	- Susanna Epp
+	- Mathematical Proofs
+- QuizLit
+	- Vocabs
+	- How to answer questions 
+
+**Topics to cover**
+- Logic X
+- Proofs X
+- Sets X
+- Functions X
+- Boolean Algebra x 
+- Relations X
+- Computation
+
+

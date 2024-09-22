@@ -1,0 +1,63 @@
+#### MATH 426
+- Practice Problems
+	- Friedburg 
+	- Analysis Book
+- QuizLit
+	- How to Do Practice Problems
+	- Vocabs
+- Chapter Read
+
+**Topics to cover**
+- Matrix-Vector Multiplication 
+	- Matrix times vector
+	- Matrix time matrix 
+	- Range and Null Space
+	- Rank
+	- Inverse
+	- A Matrix inverse times a vector
+- Orthogonal vectors and Matrices
+	- Adjoint
+	- Inner product
+	- Orthogonal Vectors
+	- Components of a Vector
+	- Unitary Matrices
+	- Multiplication by a Unitary Matrix
+- Norms
+	- Vector Norms
+	- Matrix norms and norms induced by vector norms
+	- Cauchy-Schwarz and Holder Inequalities
+	- Bounding $\|AB\|$ in an Induced Matrix Norm
+	- General Matrix Norms
+	- Invariance under Unitary Multiplication
+- The Singular Value Decomposition
+	- A Geometric Observation 
+	- Reduced SVD
+	- Full SVD
+	- Formla Definition
+	- Existence and Uniqueness
+- More on the SVD
+	- A Change of Bases
+	- SVD vs Eigenvalue Decomposition
+	- Matrix Properties via the SVD
+	- Low-Rank Approximations 
+	- Computation of the SVD
+- Projectors
+	- Projectors
+	- Complementary Projectors
+	- Orthogonal Projectors
+	- Projection with an Orthonormal Basis
+	- Projection with an Arbitrary Basis
+- QR Factorization
+	- Reduce Wr Factorization
+	- Full QR Factorization
+	- Gram-Schmidt Orthogonalization
+	- Existence and Uniqueness
+	- When vectors become continuous functions
+	- Solutions of $Ax = b$ by QR factorization
+- Gram-Schmidt Orthogonalization
+	- Gram-Schmidt Projections
+	- Modified Gram-Schmidt Algorithm
+	- Operation Count
+	- Counting Operations Geometrically
+	- Gram-Schmidt tri gular Orthogonalization
+- Principle Component Analysis

@@ -1,0 +1,406 @@
+---
+title: "Assignment 4"
+author: "Samir Banjara"
+date: "02/27/2023"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Question1:** Write an `R` program to perform the following steps.
+
+1.  Simulate a noisy data set from a line with intercept $a = 2.1$ and slope $b = 3.4$. Let $x$ range in $[-10, 10]$ with step-size $0.1$ and add gaussian noise with mean $0$ and variance 0.5.
+
+2.  Generate a `data.frame` containing simulated $x$ and $y$. Center the data using `scale` function.
+
+3.  Plot the data using `ggplot2`
+
+4.  Perform a `SVD` decomposition and create the change of coordinate matrix $P$ from the `SVD` calculations. What do the rows of $P$ represent?
+
+    1.  P is the matrix that transforms $X$ into $Y$
+
+        -   Because P(change if coordinate matrix) is a rotation and a stretch that transforms $X$ and $Y$
+
+        -   Hence, the rows of $P$, $\{p_1,…,p_m\}$ are the set of new basis vectors to express the columns of $X$
+        -   They, are also the Principle Components
+
+5.  Generate the rotated data set $Y$ by projecting onto the newly calculated PCA coordinates. Plot the rotated data.
+
+6.  What is the variance in each `PCA` direction? Plot the results using `ggplot2` bar graphs.
+
+7.  Data de-nosing: On the diagonal part of the `SVD`, set the entries corresponding to low variance directions to zero. Reconstruct the data matrix using the new `SVD`. Plot the original data and the de-noised data on the same coordinates.=
+
+**Question2:** Suppose $A \in \mathbb{C}^{m \times m}$ has an SVD $A = U \Sigma V^*$. Find the spectral decomposition of
+
+$$
+\begin{bmatrix}
+0 & A^* \\
+A & 0
+\end{bmatrix}.
+$$
+
+The given square symmetric(Hermetrian) matrix, it can be factorized into two matrices $U$ and $D$.
+
+Matrix $U$ is an orthogonal matrix.
+
+-   $UT=U^{-1}$
+
+Matrix $D$ is a diagonal matrix.
+
+Spectral Decomposition is matrix factorization because we can multiply the matrices to get back the original matrix $M = UDU^*$. Another way of saying this is that, we are diagonalizing the matrix $M$
+
+*Solution :*
+
+Since the SVD of $A$ is given by $A = U \Sigma V^*$,
+
+$$
+Mx = \lambda x \implies 
+\begin{bmatrix}
+0 & A^*\\
+A & 0
+\end{bmatrix}
+\begin{bmatrix}
+\mathrm{x}_1\\
+\mathrm{x}_2
+\end{bmatrix}
+=
+\lambda
+\begin{bmatrix}
+\mathrm{x}_1\\
+\mathrm{x}_2
+\end{bmatrix}
+\begin{aligned}
+&\implies
+A^*\mathrm{x}_2 = \lambda\mathrm{x}_1\\
+&\implies 
+A\mathrm{x}_1 = \lambda\mathrm{x}_2\\
+\end{aligned}
+$$
+
+Hence, $$
+AV=U\Sigma\\
+A^*U=V\Sigma
+$$ Thus, $$
+\begin{bmatrix}
+0 & A^*\\
+A & 0
+\end{bmatrix}
+\begin{bmatrix}
+V\\
+U
+\end{bmatrix}
+=
+\begin{bmatrix}
+V\Sigma\\
+U\Sigma
+\end{bmatrix}
+$$ Also, $$
+\begin{bmatrix}
+0 & A^*\\
+A & 0
+\end{bmatrix}
+\begin{bmatrix}
+V\\
+-U
+\end{bmatrix}
+=
+\begin{bmatrix}
+-V\Sigma\\
+U\Sigma
+\end{bmatrix}
+$$ Putting these together: $$
+\begin{aligned}
+\begin{bmatrix}
+0 & A^*\\
+A & 0
+\end{bmatrix}
+\begin{bmatrix}
+V & V\\
+U & -U
+\end{bmatrix}
+&=
+\begin{bmatrix}
+V\Sigma & -V\Sigma\\
+U\Sigma & U\Sigma
+\end{bmatrix}\\
+&=
+\begin{bmatrix}
+V & -V\\
+U & U
+\end{bmatrix}
+\begin{bmatrix}
+\Sigma & \Sigma\\
+\Sigma & \Sigma
+\end{bmatrix}\\
+&=
+\begin{bmatrix}
+V & V\\
+U & -U
+\end{bmatrix}
+\begin{bmatrix}
+\Sigma & \Sigma\\
+\Sigma & -\Sigma
+\end{bmatrix}
+\end{aligned}
+$$ Multiply both sides by,\
+$$
+\begin{bmatrix}
+V & V\\
+U & -U
+\end{bmatrix}^{-1}
+$$ to get, $$
+\begin{bmatrix}
+0 & A^*\\
+A & 0
+\end{bmatrix}
+= 
+\begin{bmatrix}
+V & V\\
+U & -U
+\end{bmatrix}
+\begin{bmatrix}
+\Sigma & \Sigma\\
+\Sigma & -\Sigma
+\end{bmatrix}
+\begin{bmatrix}
+V & V\\
+U & -U
+\end{bmatrix}^{-1}
+$$
+
+Find eigenvalues :
+
+$$
+\text{det} \left(
+\begin{pmatrix}
+0 & A^*\\
+A & 0
+\end{pmatrix}
+-
+\lambda
+\begin{pmatrix}
+1 & 0\\
+0 & 1
+\end{pmatrix}
+\right)
+= 
+\text{det}
+\begin{pmatrix}
+-\lambda & A^*\\
+A & -\lambda
+\end{pmatrix}
+= (-\lambda\cdot-\lambda) - (A^*A)
+=\lambda^2-I
+$$ Thus, the eigenvalues are: $\lambda_1=1, \lambda_2 = -1$
+
+and the diagonal matrix $D$ is composed of the eigenvalues:
+
+$$
+\begin{pmatrix}
+1 & 0\\
+0 & -1
+\end{pmatrix}
+$$
+
+The eigenvector for the given matrix: $\lambda_1 = 1$
+
+$$
+(A-\lambda I)): 
+\begin{pmatrix}
+0 & A^*\\
+A & 0
+\end{pmatrix}
+- 1
+\begin{pmatrix}
+1 & 0\\
+0 & 1
+\end{pmatrix}
+=
+\begin{pmatrix}
+-1 & A^*\\
+A & -1
+\end{pmatrix}
+$$ Reduce the matrix $\begin{pmatrix}-1 & A^*\\A & -1\end{pmatrix}$,
+
+$(-1)R_1\rightarrow R_1$ $$
+\begin{pmatrix}
+1 & -A^*\\
+A & -1\\
+\end{pmatrix}
+$$ $(-A)R_1 + R_2$ $$
+\begin{pmatrix}
+1 & -A^*\\
+0 & 0
+\end{pmatrix}
+$$ The system associated with the eigenvalue $\lambda=1$
+
+$$
+(A-1I)
+\begin{pmatrix}
+x\\
+y
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & -A^*\\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x\\
+y
+\end{pmatrix}
+= 
+\begin{pmatrix}
+0\\
+0
+\end{pmatrix}
+$$ this reduces to the equation $$x-A^*y=0$$ Isolate $$x = A^*y$$ Plug into $\begin{pmatrix}x\\ y\end{pmatrix}$
+
+$$
+\begin{pmatrix}
+A^*(y)\\
+y
+\end{pmatrix}
+\quad y\neq0
+$$ let $y = A$
+
+$$
+\begin{pmatrix}
+I\\
+A
+\end{pmatrix}
+$$
+
+The eigenvector for the given matrix: $\lambda_2 = -1$
+
+$$
+(A-\lambda I): 
+\begin{pmatrix}
+0 & A^*\\
+A & 0
+\end{pmatrix}
+- (-1)
+\begin{pmatrix}
+1 & 0\\
+0 & 1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & A^*\\
+A & 1
+\end{pmatrix}
+$$ Solve, reduce the matrix:
+
+$$
+\begin{pmatrix}
+1 & A^*\\
+A & 1
+\end{pmatrix}
+\begin{pmatrix}
+x\\
+y
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\
+0
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+1 & A^*\\
+0 & 0
+\end{pmatrix}
+$$
+
+$$
+(A + 1I)
+\begin{pmatrix}
+x\\
+y
+\end{pmatrix}
+= 
+\begin{pmatrix}
+1 & A^*\\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x\\
+y
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\
+0
+\end{pmatrix}
+$$ this reduces to the equation $$x+A^*y=0$$ Isolate $$x = -A^*y$$ Plug into $\begin{pmatrix}x\\y\end{pmatrix}$ $$
+\begin{pmatrix}
+-A^*y\\
+y
+\end{pmatrix}
+\quad y\neq0
+$$
+
+let $y = A$ $$
+\begin{pmatrix}
+-1\\
+A
+\end{pmatrix}
+$$ Eigenvectors for $$
+\begin{bmatrix}
+0 & A^* \\
+A & 0
+\end{bmatrix}.
+$$
+
+$$
+= 
+\begin{pmatrix}
+1\\
+A
+\end{pmatrix}
+,
+\begin{pmatrix}
+-1\\
+A
+\end{pmatrix}
+$$ The Eigenvectors corresponding to the Eigenvalues in \`$D$ compose the columns of $P$ $$
+P = 
+\begin{pmatrix}
+1 & -1\\
+A & A
+\end{pmatrix}
+$$
+
+and $P^{-1}$ is $$
+P^{-1} = 
+\begin{pmatrix}
+1 & -1\\
+A & A
+\end{pmatrix}^{-1}
+$$
+
+Thus, $$
+\begin{bmatrix}
+0 & A^*\\
+A & 0
+\end{bmatrix}
+=
+\begin{bmatrix}
+U & -U\\
+V & V
+\end{bmatrix}
+\begin{bmatrix}
+\Sigma & 0\\
+0 & -\Sigma
+\end{bmatrix}
+\begin{bmatrix}
+U & -U\\
+V & V
+\end{bmatrix}^{-1}
+$$

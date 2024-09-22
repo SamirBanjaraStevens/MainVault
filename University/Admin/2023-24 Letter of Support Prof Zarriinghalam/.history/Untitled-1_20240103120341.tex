@@ -1,0 +1,47 @@
+\documentclass[11pt,a4paper,roman]{moderncv}      
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+
+
+\moderncvstyle{classic}                            
+\moderncvcolor{green} % Bullet point color                          
+
+% Page margins
+\usepackage[scale=0.8]{geometry} % Page margins
+
+% Your Information, please revise
+\name{Samir}{Banjara}
+\address{32 Appleton Rd}{Nantucket, MA}{02554}
+\phone[mobile]{+1 774-325-6113}                   
+\email{samir.banjara001@umd.edu}
+\email{samirbanjara00@gmail.com}             
+                   
+
+\begin{document}
+
+% Imperial College Logo
+% ref: https://orama.tv/imperial-college-london-logo/
+\begin{minipage}[t]{\textwidth}
+\includegraphics[width=0.35\textwidth]{logo.png}
+\end{minipage}
+
+
+\recipient{Dear XXX Hiring Team,}{}
+\opening{\vspace*{-2em}}
+\closing{Sincerely,}{\vspace*{-2em}}  
+\makelettertitle
+\justifying
+
+%%% your own words here 
+
+\lipsum[2-5] % feel free to remove this dummy texts
+
+%%% end
+
+\makeletterclosing
+
+\end{document}

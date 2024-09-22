@@ -1,0 +1,443 @@
+Let $A$ and $B$ be sets.
+A **Binary Relation** from $A$ to $B$ is a subset of $A\times b$ 
+- for a <u>Binary Relation</u> $R$ we have $R\subseteq A\times B$ 
+- use use the notion $aRb$ to denote that $(a, b) \in R$ 
+- and $a\underline{R}b$ to denote that $(a,b)\notin R$ 
+
+When $(a, b)$ belongs to $R$,
+- $a$ is said to be <u>related to</u> $b$ <u>by</u> $R$ 
+
+Example: 
+Let
+$P$ be a set of people, 
+$C$ be a set of cars, and
+$D$ be the relation describing which person drives which car(s)
+
+$$
+\begin{aligned}
+P &= \{\text{Carl}, \text{Suzanne}, \text{Peter}, \text{Carla}\}\\
+C &= \{\text{Mercedes}, \text{BMW}, \text{Tricycle}\}\\
+D &= \{(\text{Carl, Mercedes}),(\text{Suzanne, Mercedes}), (\text{Suzanne, BMW}), (\text{Peter,Tricycle})\}
+\end{aligned}
+$$
+*Note:* 
+Function $f$ from a set $A$ to a set $B$ assigns a unique element of $B$ to each element of $A$
+
+The graph of $f$ is the set of ordered pairs $(a,b)$ such that $f(a) = b$
+Since the graph of $f$ is a subset of $A\times B$, it is a relation from $A$ to $B$
+
+Moreover, for each element $a\in A$,
+- there is <u>exactly one</u> ordered pair in the graph that has $a$ as its first element
+
+Conversely, if $R$ is a relation from $A$ to $B$ such that every element in $A$ is the first element of one ordered pair of $R$,
+- then a function can be defined with $R$ as its graph
+	- This is done by assigning to an element $a\in A$ the unique element $b\in B$ such that $(a,b) \in R$ 
+
+### **Relations on Sets**
+A relation on the set $A$ is a relation from $A$ to $A$ 
+- relation on the set $A$ is a subset of $A\times A$ 
+
+*Example:*
+Let $A = \{1, 2, 3, 4\}$ 
+
+Which ordered pairs are in the relation $R=\{(a,b) \ | \ a<b\}$?
+- *Solution:*
+$$
+\begin{aligned}
+A\times A =
+\{&(1, 1), (1, 2), (1, 3), (1, 4),\\
+&(2, 1), (2, 2), (2, 3), (2, 4),\\
+&(3, 1), (3, 2), (3, 3), (3, 4),\\
+&(4, 1), (4, 2), (4, 3), (4, 4)\}
+\end{aligned}
+$$
+so, 
+$$
+\begin{aligned}
+R = 
+\{(1, 2), (1, 3), (1, 4),\\
+(2, 3), (2, 4),\\
+(3, 4)\}
+\end{aligned}
+$$
+
+How many different relations can we define on a set $A$ with $n$ elements?
+- A relation on a set $A$ is a subset of $A\times A$
+
+How many elements are in $A\times A$?
+- There are $n^2$ elements in $A\times A$
+- The number of subsets that we can form out of the set with $m$ elements is $2^m$ 
+- Therefore, $\huge{2^{n^{2}}}$   subsets can be formed out of $A\times A$ 
+
+Hence, we can define  $\huge{2^{n^{2}}}$ different relations (subsets of $A\times A$) on $A$ 
+
+
+### **Properties Of Relations** 
+
+**Reflexive :**
+if $(a,a)\in R$  for every element $a\in A$
+
+which of the following relations (subsets) on $A = \{1, 2, 3, 4\}$ are reflexive?
+$$
+\begin{aligned}
+R_1 &= \{(1, 1), (1, 2), (2, 3), (3, 3), (4, 4)\}\\
+R_2 &= \{(1, 1),(2, 2),(2, 3),(3, 3),(4, 4)\}\\
+R_3 &= {(1, 1), (2, 2), (3, 3)}
+\end{aligned}
+$$
+$R_1$ : No, $(2, 2)$ is missing. 
+- $(a, a) \in R$ for every element $a\in A$ 
+	- So $(1, 1), (2, 2), (3, 3), (4, 4)$ need to exist in a subset for the relation to be reflexive.
+
+$R_3$ : No, $(4, 4)$ missing
+
+$R_2$ : Yes, this is reflexive subset because $(1, 1), (2, 2), (3, 3), (4, 4) \subset R_2$ 
+
+**Irreflexive :**
+if $(a, a) \notin R$ for every element $a\in A$
+
+**Symmetric :**
+If $(b, a)\in R$ whenever $(a, b) \in R$ for all, $a, b\in A$ 
+
+- **Antisymmetric :**
+	- If $a = b$ whenever $(a,b)\in R$ and $(b, a)\in R$  implies $x = y$  
+- **Asymmetric :**
+	- If $(a, b)\in R$ implies that $(b, a) \notin R$ for all $a, b\in R$ 
+		- *Note :* 
+			- A relation is **asymmetric** if and only 
+			- if it is both **antisymmetric** 
+			- and **Irreflexive**
+- Asymmetric = Antisymmetric + Irreflexive
+
+**Transitive**
+If whenever $(a, b) \in R$ and $(b, c)\in R$ then $(a, c)\in R$ for $a, b, c\in A$ 
+- Are the following relations (subsets of $A\times A$) on $A = \{1, 2, 3, 4\}$ transitive?
+$$
+\begin{aligned}
+R_1 &= \{(1,1), (1,2), (2, 2),(2, 1) (3,3)\}\\
+R_2 &= \{(1, 3), (3, 2), (2, 1)\}\\
+R_3 &= \{(2, 4), (4, 3), (2, 3), (4, 1)\}
+\end{aligned}
+$$
+
+| $R_1$ |       |               |
+| ----- | ----- | ------------- |
+| 1     | 2     | $\rightarrow$ |
+| (1,1) | (1,2) | (1,2)         |
+| (1,1) | (1,1) | (1,1)         |
+| (1,2) | (2,1) | (1,1)         |
+| (2,1) | (1,2) | (2,2)         |
+| (2,2) | (2,2) | (2,2)         |
+| (3,3) | (3,3) | (3,3)         |
+
+So <u>are any ordered pairs</u> of the $3^{rd}$ <u>column missing</u>?
+- **No,** Hence, $R_1$ is transitive relation 
+
+| $R_2$ |       |               |
+| ----- | ----- | ------------- |
+| 1     | 2     | $\rightarrow$ |
+| (1,3) | (3,1) | $(1,1)$         |
+| (2,1) | (1,2) | $(2,2)$         |
+| (3,1) | (1,3) | $(3,3)$         |
+
+Highlighted entries in column 3 are missing, from $R_2$ hence, this relation is not transitive.
+
+
+*Question:*
+How many reflexive relations can be defined on a set $A$?
+
+*Sol:*
+Relations are subsets of $A\times A$ that contain $n^2$ elements
+therefore, different relation on $A$ can be generated by choosing different subsets out of these $n^2$ elements,
+- So there are $\huge{2^{n^{2}}}$  total relations 
+
+A reflexive relation, contains the $n$ elements $(a,a)$ for every $a\in A$ 
+- consequently, we can only choose among the remaining $n^2-n = n(n-1)$ elements to generate reflexive relations whether they are in the relation or not, so there are 
+	- $2^{n(n-1)}$ reflexive relations defined on set $A$ containing $n$ elements 
+
+**Combining Relations** (was on test last semester)
+
+The **Composite** of $R$ and $S$ 
+- is the relation consisting of ordered pairs $(a, c)$ 
+	- where $a\in A$, $c\in C$ 
+	- and for which there exists an element $b \in B$ such that $(a, b) \in R$ and $(b, c)\in S$ 
+- In other words 
+	- if relation $R$ contains a pair $(a, b)$ 
+	- and relation $S$ contains a pair $b, c$, 
+	- then $S \circ R$ contains a pair $(a, c)$ 
+
+*Example*:
+Let $S$ and $D$ denote relations on $A = \{1, 2, 3, 4\}$ 
+
+$$A \times A = 
+\begin{bmatrix}
+(1, 1) & (1, 2) & (1, 3) & (1, 4)\\
+(2, 1) & (2, 2) & (2, 3) & (2, 4)\\
+(3, 1) & (3, 2) & (3, 3) & (3, 4)\\
+(4, 1) & (4, 2) & (4, 3) & (4, 4)
+\end{bmatrix}
+$$
+
+- $S = \{(a, b) \ | \ a < b\}$ - "a is smaller than b"
+	- $S = \{(1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)\}$ 
+
+- $D = \{(a, b) \ | \ b = 5-a\}$ - "b equals $(5-a)$" 
+	- $D = \{(1, 4), (2, 3), (3, 2), (4,1)\}$
+
+then, $S\circ D = \{(2, 4), (3, 3), (3, 4), (4, 2), (4, 3), (4, 4)\}$ 
+
+**Remember** to work <u>from inside out</u> : 
+- $D$ maps an elements $a$ to the element $(5-a)$ 
+	- and afterwards $S$ maps $(5-a)$ to all elements larger than $(5-a)$
+		- resulting in 
+
+-$S\circ D = \{(a, b) \ | \ b > 5 - a\}$  or  $S\circ D = \{(a, b) \ | \ a + b > 5\}$  
+
+Functions are just a special cases of relations
+	Namely, those that map each element in the domain *onto*  exactly one element in the codomain
+
+To convert two functions into relations is to,
+- write them down as a set of ordered pairs
+
+
+**Representing relations as matrices** 
+set $A = \{1, 2, 3\}$
+set $B = \{1, 2\}$
+
+with $R = \{(2, 1), (3, 1), (3, 2)\}$  
+
+wherever there is a ordered pair of the relation input 1 in the matrix, 
+- wherever there isn't a ordered pair, input 0 in the matrix.
+
+So,
+- row 2, column 1 
+- row 3, column 1
+- row 3, column 2
+	- are all ones
+
+size of matrix?
+last element of set $A$ times last element of set $B$
+- a $3 \times 2$ matrix
+
+hence, matrix $M_R$ is given by
+$$
+M_R = 
+\begin{bmatrix}
+0 & 0\\
+1 & 0\\
+1 & 1
+\end{bmatrix}
+$$
+
+Closures of Relations
+
+![[Pasted image 20230306191720.png]]
+
+
+**Partial Orderings** 
+
+sometimes relations define an order on the elements in a set.
+
+- Definition 
+	- A relation $R$ 
+		- on a set $S$ is called 
+			- a **partial ordering** or **partial order** 
+				- if it is 
+					- **Reflexive**
+					- **Antisymmetric**
+					- and , **Transitive**
+
+Example : 
+
+Consider the "greater than or equal" 
+relation $\geq$  (defined by $\{(a, b) \ | \ a \geq b\}$) 
+- Is $\geq$ a partial ordering on the set of integers?
+
+- $\geq$ is **Reflexive**, 
+	- for $a\geq a$ for every integer $a$. 
+- $\geq$ is **Antisymmetric**,
+	- because if $a\neq b$, then $a\geq b \ \cap b\geq a$ is false.
+- $\geq$ is **Transitive**,
+	- because if $a\geq b$ and $b\geq c$, then $a\geq c$ 
+
+- consequently, ($\mathbb{Z}, \geq$) is a partially ordered set. 
+
+Example : 
+- is the "inclusion relation" $\subseteq$ a partial ordering on the power set of a set $S$?
+	- $\subseteq$ is **reflexive** , 
+		- because a $A \subseteq A$ for every set $A$
+	- $\subseteq$ is **antisymmetric**, 
+		- because if $A\neq B$, then $A\subseteq B \cap B\subseteq A$ is false
+	- $\subseteq$ is **transitive** 
+		- because if $A\subseteq B$ and $B\subset C$, then $A\subseteq C$ 
+- Consequently, $((2^S),\subseteq)$, is a partially ordered set.
+
+
+in a partially ordered set the notation $a\leq b$ 
+- denotes that $(a, b) \in R$ 
+
+*Note :* 
+- the symbol $\leq$ is used to denote 
+	- the relation in any partially ordered set , 
+		- not just the "less than or equal" relation
+
+- The notation $a < b$ denotes that $a \leq b$,
+	- but $a \neq b$ 
+
+
+**Totally Ordered Sets**
+For certain applications we require all elements of a set to be comparable 
+
+For example, 
+- If we want to write a dictionary, we need to define an order (alphabetic order) on all english words
+
+Definiton : 
+- if $(S, \leq)$ is POSET (partially ordered set) 
+- and, every two elements of $S$ are comparable
+	- $S$ is called a **totally ordered** or **linearly ordered set**
+	- and $\leq$ is called a **total order** or **linear order**
+
+Question : 
+- Is $(\mathbb{Z}, \leq)$ a totally ordered set?
+
+- Answer :
+	- Yes, because $a \leq b$ or $b \leq a$ for all integer $a$ and $b$ 
+
+Question :
+- is $(\mathbb{Z}^+, | \ )$ a totally ordered set? (a divides b)
+
+- Answer :
+	- No, it contains incomparable elements such as $5$ and $7$
+
+
+**Equivalence Relation :**
+- Equivalence relations are used to relate objects that are similar in some way.
+
+- **Definition :**
+	- A relation on set $A$ is called an **equivalence relation**, if it is
+		- <u>Reflexive</u>
+		- <u>Symmetric</u>
+		- <u>and, Transitive</u>
+	- <u>two elements</u> that are <u>related by an equivalence relation</u> $R$ 
+		- are called **Equivalent**
+
+Example : 
+- suppose that $R$ is the relation on
+	- the set of strings that consist of English letters 
+		- such that $aRb$ if and only if $I(a) = I(b)$ , 
+			- where $I(x)$ is the length of the string $x$ 
+	- Is $R$ an equivalence relation?
+
+Solution : 
+- $R$ is **Reflexive** 
+	- because $I(a) = I(a)$ and 
+		- therefore $aRa$ for any string a
+- $R$ is **Symmetric**
+	- Because if $I(a) = I(b)$ then $I(b) = I(a)$
+		- so, if $aRb$ then $bRa$ 
+- R is **Transitive**
+	- because, if $I(a) = I(b)$ and $I(b) = I(c)$ then, $I(a) = I(c)$ 
+		- so, $aRb$ and $bRc$ implies $aRc$ 
+
+All three conditions of equivalence relations met, therefore, $R$ is an equivalence relation.
+
+**Equivalence Classes** 
+- Definition : Let $R$ be an equivalence relation on set $A$
+	- (Reflexive, symmetric and transitve)
+		- The <u>set of all elements that are related to an element</u> $a\in A$ is called the **Equivalence Class** of $a$
+			- The equivalence class of $a$ with respect to $R$ is denoted by $[a]_R$ 
+				- When only one relation is under consideration, 
+					- we will delete the subscript $R$ and write $[a]$ for this equivalence class
+- if $b\in [a]_R$ 
+	- $b$ is the **Representative** of this equivalence class 
+
+Example : 
+- In the previous dictionary example (strings of identical length), 
+	- what is the equivalence class of the word **mouse**, 
+		- denoted by $[\text{mouse}]$ ?
+
+Solution :
+- $[\text{mouse}]$  is the set of all english words containing five letters 
+	- and 'horse' would be a representative of this equivalence class. 
+
+Theorem : 
+Let $R$ be an equivalence relation on a set $A$. 
+The following 3 statements are equivalent: 
+- $aRb$
+- $[a] = [b]$ 
+- $[a] \cap [b] \neq \emptyset$ 
+	- Reminder a **Partition** of a set $S$
+		- is a collection of disjoint nonempty subsets of $S$ 
+			- that have $S$ as their union
+				- in other words,
+					- the collection of subsets $A_i, \quad i\in I$ 
+						- forms a partition of $S$ 
+							- if and only if 
+								- 1. $A_i \neq \emptyset \quad i \in I$ 
+								- 2. $A_i \cap A_j = \emptyset, \quad \text{ if } i\neq j$  
+								- 3. $\bigcup_{i\in I} A_i = S$    
+
+Theorem : 
+Let $R$ be an equivalence relation on a set $S$,
+- then the equivalence classes of $R$ form a partition of $S$.
+
+- Conversely, given a partition $\{A_i \ | \ i\in I\}$ of the set $S$,
+	- there is an equivalence relation $R$ 
+		- that has the sets $A_i \quad i\in I$ as its equivalence classes.
+
+Example : 
+- live in Boston
+	- Frank 
+	- Suzanne
+	- George
+
+- Live in Lubeck
+	- Max
+	- Stephanie
+
+- Live in Sydney
+	- Jenifer
+
+Let $R$ be the equivalence relation 
+- $\{(a, b) \ | \ a \text{ and } b \text{ live in the same city }\}$ 
+	- on the set $P = \{\text{ Frank, Suzanne, George, Stephanie, Max, Jennifer }\}$  
+- Then 
+$$
+R = 
+\begin{aligned}
+&\{\text{(Frank, Frank), (Frank, Suzanne),(Frank,George)},\\
+&\text{(Suzanne, Frank), (Suzanne, Suzanne),(Suzanne,George)},\\
+&\text{(George, Frank), (George, Suzanne), (George,George)},\\
+&\text{(Stephanie, Stephanie), (Stephanie, Max)},\\
+&\text{(Max,Stephanie), (Max, Max)},\\
+&\text{(Jennifer, Jennifer)}\}
+\end{aligned}
+$$
+Then the equivalence classes of $R$ are the following partition:
+$\{\{\text{Frank, Suzanne, George}\}, \{\text{Stephanie, Max}\}, \{\text{ Jennifer }\}\}$ 
+The equivalence classes of any equivalence relation $R$ 
+- defined on a set $S$ 
+	- constitute a partition of $S$
+		- because every element in $S$ is assigned to exactly one of the equivalence classes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

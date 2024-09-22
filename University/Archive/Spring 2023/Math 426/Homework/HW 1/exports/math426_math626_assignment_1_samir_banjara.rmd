@@ -1,0 +1,162 @@
+---
+title: "math426_math626_assignment_1_samir_banjara"
+author: "Samir Banjara"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document: default
+  html_document: default
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Question 1:** State the fundamental theorem of invertible matrices.
+Use *Lists* to format the equivalent statements.
+
+Let **A** be an $n\times n$ matrix. Then, **A** is invertible if there
+exists an $n\times n$ matrix **B** such that $AB = BA = I$.
+
+-   **Equivalent statements**
+    -   A has an inverse of $A^{-1}$,
+    -   $\text{rank}(A) = m$,
+    -   $\text{range}(A) = \mathbb{C}^m$
+    -   $\text{null}(A) = \{0\}$
+    -   $0 \text{is not an eigenvalue of} A$,
+    -   $0 \text{is not a singular value of} A$,
+    -   $\text{det}\,(A\,)\ne 0$.
+
+Consider the $n\times 2n$ augmented matrix $C = \,(A\,|\,I_{n}\,)$.
+
+Then,
+
+```{=latex}
+\begin{equation} \label{eq:1} 
+A^{-1} C = (\,A^{-1} A\, | \,A^{-1} I_{n}\,) = (\,I_{n}\, | \,A^{-1}\,)
+\end{equation}
+```
+Because $A^{-1}$ is the product of elementary matrices,
+$A^{-1} = E_{p}E_{p-1}\dots E_{1}$ thus, equation$\ref{eq:1}$ becomes
+$$E_{p} E_{p-1}\cdots E_{1}\,(A\, | \, I_{n}\,) = A^{-1}C = \,(I_{n}\, | \, A^{-1}\,)$$
+Then,
+
+```{=latex}
+\begin{equation} \label{eq:2}
+ E_{p}E_{p-1}\dots E_{1}\,(A\, | \, I_{n}\,) = \,(I_{n}\, | \, B)
+\end{equation}
+```
+Letting $M = E_{p}E_{p-1}\dots E_{1}$, we have from $\ref{eq:2}$, that
+$$\,(MA\,|\,M\,) = M\,(A\,|\,I_{n}\,) = \,(I_{n}\,|\,B\,)$$
+
+Hence,$MA = I_{n}$ and $M=B$. It follow that $M = A^{-1}$.
+
+**Question 2:** Generate a code block and plot the function $y = x^2$ is
+red from $-2$ to $2$. Make sure the code as well as the output are
+displayed in the pdf.
+
+```{r code, eval = TRUE, echo=TRUE, message=FALSE, warning=FALSE, fig.width=5, fig.height=5}
+myFunction = function(x, a){
+  result = x^a 
+  return (result) 
+}
+x = -2:2 
+y = myFunction(x,2) 
+plot(x, y, col = "red", type = 'l', xlab="x", ylab="y")
+```
+
+**Question 3:** Let $A \in \mathbb{R}^{m\times n}$ be an $m \times n$
+matrix.
+
+1.  Show that $Range(A)$ is the space spanned by the columns of$A$.
+
+**Proof**: Let V and W be a vector space, and let transformation
+representing matrix $A$ be linear ($T : V\rightarrow W$). If
+$\beta = {v_{1}, v_{2},\cdots,v_{n}}$ is a basis for $V$ then,
+
+$$R\,(T\,) = \text{span}\,(\{T\,(v_{1}\,), T\,(v_{2}\,),\cdots , T\,(v_{n}\,)\}$$
+
+Clearly $T\,(v_{i}\,) \in R\,(T\,),\quad \text{for each} \, i$. Because
+$R\,(T\,)$ is a subspace, $R\,(T\,)$ contains
+
+```{=latex}
+\begin{equation}
+\text{span}\,(\{T\,(v_{1}\,),T\,(v_{2}\,),\cdots,T\,(v_{n}\,)\}=
+\text{span}\,(T\,(B\,)\,)
+\end{equation}
+```
+Suppose $w \in R\,(T\,)$. Then, $w = T\,(v\,) \quad \exists \,v \in V$.
+Because $\beta$ is a basis for $V$ we have,
+
+```{=latex}
+\begin{equation}
+v = \sum_{i=1}^{n} a_{i}v_{i} \quad \exists a_{1}, a_{2},\cdots,a_{n} \in F
+\end{equation}
+```
+Since $T$ is linear,
+$w = T\,(V) = \sum_{i=1}^{n}a_{i}\,T\,(v_{i}\,)\in \,\text{span}\,(T\,(\beta\,)\,)$.
+
+So, $R\,(T\,)$ is contained in $\text{span}\,(T\,(\beta\,)\,)$
+
+2.  Show that
+    $dim \left(Null(A)\right) + dim \left(Range(A) \right) = n$. This is
+    referred to as *Rank Theorem*.
+
+**Proof**: Let $V$ and $W$ be vector space and let the linear
+transformation $T: V \rightarrow W$ represent a matrix, if V is finite
+dimensional then, $dim(R(T)) + dim(N(T)) = dim(V)$.
+
+If $W$ is a subspace of a finite dimension vector space $V$. Then any
+basis for $W$ can be extended to a basis for $V$. Thus, we claim
+$S = \{T(v_{k+1}), T(v_{v+2}),\cdots,T(v)\}$ is a basis for $R(t)$.
+
+We first need to prove that $S$ generates $R\,(T\,)$.
+Suppose,$\text{dim}(V) = n, \ \text{dim}(N(T)) = k, \ and \ \{v_{1}, v_{2},\cdots, v_{k}\}$
+is a basis for $N(T)$ using the fact that $T\,(v_{i}\,) = 0$ for
+$1 \le i \le k$ we have,
+
+```{=latex}
+\begin{flalign*}
+R(T) & =\text{span}\,(\{T\,(v_{1}\,), T\,(v_{2}\,),\cdots , T\,(v_{n}\,)\}&\\
+     & =\text{span}\,(\{T\,(v_{k+1}\,), T\,(v_{k+2}\,),\cdots , T\,(v_{n}\,)\}&\\
+     & =\text{span}\,(S\,)
+\end{flalign*}
+```
+Now we prove that $S$ is linearly independent. Suppose that,
+
+$$
+\sum_{i\,=\,k+1}^{n} b_{i}\,T\,(v_{i}\,) = 0 \quad \text{for} \ b_{k+1}, b_{k+2}, \cdots, b_{n} \in F
+$$
+
+using the fact that $T$ is linear we have,
+
+$$
+T\left(\sum_{i\,=\,k+1}^{n} b_{i}\,v_{i}\right) = 0
+$$
+
+so,
+
+$$
+\sum_{i\,=\,k+1}^{n} b_{i}\,v_{i} \in N\,(T\,)
+$$
+
+Hence, there exists $c_{1}, c_{2},\cdots,c_{k}\in F$ such that,
+
+$$
+\sum_{i\,=\,k+1}^{n} b_{i}\,v_{i} = \sum_{i\,=\,1}^{k} c_{i}\,v_{i} \\ \quad \text{or} \quad \sum_{i=1}^{k}\,(-c_{i}\,)\,v_{i} + \sum_{i\,=\,k+1}^{n} b_{i}\,v_{i} = 0
+$$
+
+Since, $\beta$ is a basis for \$V\$, we have $b_{i} = 0$ for all $i$.
+
+Hence, $S$ is linearly independent and
+$T\,(v_{k+1}\,), T\,(v_{k+2}\,),\cdots , T\,(v_{n}\,)$ are distinct;
+
+```{=latex}
+\begin{flalign*}
+\therefore \ \text{rank}\,(T\,) & = n - k&\\
+dim(R(T)) & = dim(V) - dim(N(T))&\\
+dim(R(T)) + dim(N(T)) & = dim(V)&\\ 
+\end{flalign*}
+```

@@ -1,0 +1,77 @@
+#### MATH 242
+- Assignment review
+- Test 1 review
+- Practice Problems
+	- Early Transcendentals
+		- Ch 12
+			- 12.1
+			- 12.2
+			- 12.3
+			- 12.4
+			- 12.5
+			- 12.6
+		- Ch 13
+			- 13.1
+			- 13.2
+			- 13.3
+			- 13.4
+		- Ch 14
+			- 14.1
+			- 14.2
+			- 14.2
+			- 14.4
+			- 14.5
+			- 14.6
+			- 14.7
+			- 14.8
+		- Ch 15
+			- 15.1
+			- 15.2
+			- 15.3
+			- 15.2
+- QuizLit
+	- How to Do Practice Problems
+	- Vocabs
+- WebWork
+	- Rectangular Coordinates
+	- Curvilinear Coordinates
+	- Vectors
+	- Dot Product
+	- Cross Product
+	- Lines Planes
+
+**Topics to cover**
+- Vectors 
+- Dot Product and Projection Vectors
+- Cross Product
+- Equation of Lines and Planes
+	**Test 1**
+- Vectors Functions
+- Derivatives And Integrals of Vector Functions 
+- Motion in Space
+- Quadratic Surfaces
+- Level Curves
+- Limits and Continuity of Multi-Variable Functions 
+- Directional Derivatives
+- Partical Derivatives
+- Tangent Planes and Liner Approximation
+- Multivariable Chain Rule
+- Gradient Vector 
+- Optimization of Two-Variable Functions 
+- Lagrange Multipliers
+- Double Integrals over rectangles
+- Integrated Integrals and double integrals over general regions
+- Double Integrals in Polar Coordinates
+- Double Integral Applications 
+	- **Test 2**
+- Tripple Integrals
+- Tripple Integrals In Spherical Coordinates
+- Change of Variable in Multivariable integrals
+- Vector Fields, Line Integrals in Vector Fields 
+- Fundamental Theorem Of Line Integrals
+- Conservative Vector Fiels 
+- Green's Theorem
+- Parametric Surfaces abd Surface Integrals
+- Divergence Theorem
+- Strokes Theorem
+	- **Finals**
