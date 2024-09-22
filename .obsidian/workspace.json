@@ -8,6 +8,22 @@
         "type": "tabs",
         "children": [
           {
+            "id": "13a9b43fc9a07300",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/HW 3.pdf"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ab0f3fcad3a24e76",
+        "type": "tabs",
+        "children": [
+          {
             "id": "d179cae88c321368",
             "type": "leaf",
             "state": {
@@ -175,21 +191,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6b674a05129e8fb5",
+  "active": "d179cae88c321368",
   "lastOpenFiles": [
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/New Marlowe Faustus complete.pptx",
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/FINAL  M&M I - First 4 Fausts; Bulgakov & Making of a New Faust; Introduction to M&M - Copy.pptx",
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/7. From Faith to Skepticism & Goethe's Faust, Part I - Copy.pptx",
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/5D. Christopher Marlowe.ppt",
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/5C. Cultural Transmission of the Faust Tradition; Christopher Marlowe(1).ppt",
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/4.B Faustbook 1587-edited pacts with devil - Copy (15).pptx",
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/4. Faustbook 1587-edited pacts with devil - Copy.ppt",
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/3. Sample Pacts with the Devil, Magic Words(1) (6).pptx",
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/21. Satire in M&M -Satan and Sin (8)(1).pptx",
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/2. The Changing Face of the Devil; Witches;Learned men(1) (8).pptx",
-    "University/Archive/Spring 24'/HUMAN 255L/Powerpoints/12b. The Masters Story; The Devil and Insanity; Satin and Sin(1).pptx",
-    "University/Archive/Spring 2023/CS 220/Applied Discrete Math.md",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/Hw_3_Samir_Banjara.pdf",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/HW3SamirBanjara.pdf",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/HW3SamirBanjara.synctex(busy)",
     "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/Hw_3_Samir_Banjara.md",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/HW3SamirBanjara.aux",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/HW 3.pdf",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Lecture Slides/Week 3/Section 2.4.pdf",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/conditional probability.md",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Lecture Slides/Week 3/Section 2.2.pdf",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Lecture Slides/Week 3/Section 2.3.pdf",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/HW3SamirBanjara.log",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/HW3SamirBanjara.synctex.gz",
+    "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/HW3SamirBanjara.idx",
+    "University/Archive/Spring 2023/CS 220/Applied Discrete Math.md",
     "University/Archive/Spring 2023/CS 220/Gradescope/10 HW/10 HW.md",
     "University/Archive/Spring 2023/CS 220/Gradescope/HW8.md",
     "University/Archive/Spring 2023/CS 220/Gradescope/HW7.md",
@@ -212,7 +229,6 @@
     "University/Archive/Spring 2023/CS 220/Notes/slides/Proofs.md",
     "University/Archive/Spring 2023/CS 220/Notes/2 Finals Study Exam.md",
     "University/Archive/Spring 2023/CS 220/Notes/Finals Study Exam.md",
-    "University/Archive/Spring 2023/CS 220/Notes/Notes Ledger.md",
     "Images/output.png",
     "Images/Pasted image 20240907152931.png",
     "University/FALL 2024/MA 225 - Infinite Series/Untitled.canvas",

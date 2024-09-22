@@ -17,62 +17,203 @@
 \usepackage{psfrag}
 \usepackage{pgfplots}
 \usepackage{bm}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Other Settings
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\geometry{a4paper}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%
-\definecolor{ocre}{RGB}{243,102,25}
-\definecolor{mygray}{RGB}{243,243,244}
-\definecolor{deepGreen}{RGB}{26,111,0}
-\definecolor{shallowGreen}{RGB}{235,255,255}
-\definecolor{deepBlue}{RGB}{61,124,222}
-\definecolor{shallowBlue}{RGB}{235,249,255}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%% Define an orangebox command %%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand\orangebox[1]{\fcolorbox{ocre}{mygray}{\hspace{1em}#1\hspace{1em}}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% English Environments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newtheoremstyle{mytheoremstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
-\newtheoremstyle{myproblemstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
-\theoremstyle{mytheoremstyle}
-\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowGreen,linecolor=deepGreen,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{theorem}{Theorem}[section]
-\theoremstyle{mytheoremstyle}
-\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowBlue,linecolor=deepBlue,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{definition}{Definition}[section]
-\theoremstyle{myproblemstyle}
-\newmdtheoremenv[linecolor=black,leftmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,]{problem}{Problem}[section]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plotting Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepgfplotslibrary{colorbrewer}
-\pgfplotsset{width=8cm,compat=1.9}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Title}
+\title{Homework \#3}
 \author{Samir Banjara}
-\date{Date}
+\date{\today}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{document}
-    \maketitle
-    
-\end{document}
+% Custom environment for questions
+\newenvironment{question}[1]{
+    \vspace{1em}
+    \noindent\textbf{#1} \\
+    \vspace{0.5em}
+}
 
 \begin{document}
     \maketitle
-
 \noindent
-\(\textbf{Pledge:} I pledge my honor that I have abided by the Stevens Honor System.\)
-
+\(\textbf{Pledge:}\)
+ I pledge my honor that I have abided by the Stevens Honor System.
 \noindent
 \textbf{Signature:} Samir Banjara
 
+% Question 1
+\section*{Problem 1}
 
+\textbf{(A)} Find the probability of rolling two dice and not getting doubles.\\
 
+\textbf{Solution:}
+\vspace{1em} \\
+Given the set of possibilities of rolling two dice,
+\[
+s = 
+\begin{aligned}
+&\left\{(1,1), (2,1), (3, 1), (4, 1), (5, 1), (6, 1)\right\}  \\
+&\left\{(1,2), (2,2), (3, 2), (4, 2), (5, 2), (6, 2)\right\}  \\
+&\left\{(1,3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3)\right\} \\
+&\left\{(1, 4), (2, 4), (3, 4), (4, 4), (5, 4), (6, 4)\right\} \\
+&\left\{(1, 5), (2, 5), (3, 5), (4, 5), (5, 5), (6, 5)\right\} \\
+&\left\{(1, 6), (2, 6), (3, 6), (4, 6), (5, 6), (6, 6)\right\}
+\end{aligned}
+\]
+
+There are 30 rolls out of 36 that are not an ordered double. Thus, the probability is \( \frac{30}{36} \).\\
+
+\vspace{1em}
+\textbf{(B)} Given that every fifth person in line will get a coupon for a free box of popcorn at the movies, what is the probability that you don’t get a coupon when you’re in line?\\
+
+\textbf{Solution:}
+\vspace{1em} \\
+Every 5th person in line gets a coupon. That means 1 person out of 5 gets a coupon. The probability of not getting a coupon is then:
+
+\[
+1 - \frac{1}{5} = \frac{4}{5}
+\]
+
+\section*{Problem 2}
+
+Insulin pens used to administer a patient’s insulin at hospitals have a malfunction rate of 9\%. This means that out of a box of 200 pens, 18 are defective. Find the probability of randomly selecting 3 defective insulin pens in a row from a brand-new box of 200 pens, if a defective pen is immediately discarded.
+
+\textbf{Solution:} \\
+The probability of selecting a defective pen out of a new box of 200 is \( \frac{18}{200} \). Since the pen is discarded, the probability of picking another defective pen is:
+
+\[
+\frac{17}{199}
+\]
+
+For the third pen:
+
+\[
+\frac{16}{198}
+\]
+
+Thus, the total probability is:
+
+\[
+\left( \frac{18}{200} \right) \left( \frac{17}{199} \right) \left( \frac{16}{198} \right) = 0.000621 \times 100\% = 0.0621\%
+\]
+
+\section*{Problem 3}
+
+The following table displays the breakdown of attendees at an International Biology conference by country and their role in the company they were representing.
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+& Canada & France & South Korea & UK  & US  \\
+\hline
+CEO      & 138    & 45     & 4           & 19  & 117 \\
+Director & 8      & 4      & 25          & 6   & 63  \\
+Partner  & 23     & 7      & 3           & 20  & 103 \\
+Chairman & 12     & 9      & 3           & 9   & 62  \\
+Other    & 112    & 146    & 154         & 143 & 2103 \\
+\hline
+\end{tabular}
+
+A random attendee is selected for an interview.
+
+\textbf{a)} What is the probability that a Partner is selected, given that the attendee is from South Korea?\\
+\textbf{Solution:} \\
+The conditional probability is:
+
+\[
+P(\text{Partner} | \text{South Korea}) = \frac{3}{189} = \frac{1}{63}
+\]
+
+\textbf{b)} What is the probability that a Canadian is selected, given that the attendee is a director of the company?\\
+\textbf{Solution:} \\
+The conditional probability is:
+
+\[
+P(\text{Canadian} | \text{Director}) = \frac{8}{106}
+\]
+
+\textbf{c)} What is the probability that a director is selected, given that the attendee is Canadian?\\
+\textbf{Solution:} \\
+The conditional probability is:
+
+\[
+P(\text{Director} | \text{Canadian}) = \frac{8}{293}
+\]
+
+\textbf{d)} What is the probability that a CEO is selected, given that the attendee is from the continent of North America?\\
+\textbf{Solution:} \\
+The conditional probability is:
+
+\[
+P(\text{CEO} | \text{North America}) = \frac{255}{2741}
+\]
+
+\section*{Problem 4}
+
+Every 6 months, university email requires that a new 5-digit password be set up. No digits are allowed to be repeated and it must be different from your last two passwords. If you let your computer randomly choose a 5-digit code for you with no repeating digits, what is the probability that it will choose one of the last 2 passwords you’ve had? Round your answer to five decimal places.
+
+\textbf{Solution:} \\
+The total number of possible passwords is:
+
+\[
+10 \times 9 \times 8 \times 7 \times 6 = 30240
+\]
+
+The probability that 2 of the computer-generated passwords match your last 2 is:
+
+\[
+\frac{2}{30240} = 0.00007
+\]
+
+\section*{Problem 5}
+
+Virginia’s Veggie Café offers 5 types of homemade bread, 10 toppings, and 6 different condiments. How many different super sandwiches can be made if a super sandwich consists of 6 different toppings and 2 different condiments?
+
+\textbf{Solution:} \\
+The total number of combinations is:
+
+\[
+5 \times \binom{10}{6} \times \binom{6}{2} = 5 \times 210 \times 15 = 15750
+\]
+
+\section*{Problem 6}
+
+Ashley’s Internet service is terribly unreliable. On any given day, there is a 15\% chance that her Internet connection will be lost. What is the probability that her Internet service is not broken for five days in a row?
+
+\textbf{Solution:} \\
+The probability that the Internet works on a given day is:
+
+\[
+P(\text{Works}) = 1 - 0.15 = 0.85
+\]
+
+The probability that it works for five days in a row is:
+
+\[
+(0.85)^5
+\]
+
+\section*{Problem 7}
+
+Because Tristan has diabetes, he must ensure his daily diet includes 2 vegetables, 3 fruits, and 2 breads. At the grocery store, he has a choice of 20 vegetables, 8 fruits, and 5 breads.
+
+\textbf{a)} In how many ways can he make up his daily requirements if he doesn’t eat 2 helpings of the same thing?\\
+\textbf{Solution:} \\
+The number of combinations is:
+
+\[
+\binom{20}{2} \times \binom{8}{3} \times \binom{5}{2} = 106400
+\]
+
+\textbf{b)} What’s the probability that a random choice from his possibilities would yield either carrots or spinach?\\
+\textbf{Solution:} \\
+The number of ways to include carrots or spinach is:
+
+\[
+P(A) + P(B) - P(A \cap B) = 19 + 19 - 1 = 37
+\]
+
+The probability is:
+
+\[
+\frac{20720}{106400} \approx 0.1947 \times 100\% = 19.47\%
+\]
 \end{document}

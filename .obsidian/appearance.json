@@ -1,6 +1,6 @@
 {
   "accentColor": "",
-  "cssTheme": "AnuPpuccin",
+  "cssTheme": "Obsidianite",
   "translucency": false,
   "theme": "obsidian",
   "baseFontSize": 25,
@@ -8,10 +8,10 @@
     "Untitled",
     "extended color schemes"
   ],
-  "textFontFamily": "Rubik",
-  "interfaceFontFamily": "Rubik,Overpass",
+  "textFontFamily": "FiraCodeNFP-Ret",
+  "interfaceFontFamily": "",
   "showViewHeader": true,
   "nativeMenus": false,
-  "monospaceFontFamily": "JetBrains Mono NL",
+  "monospaceFontFamily": "JetBrainsMonoNL Nerd Font Propo",
   "baseFontSizeAction": false
 }
