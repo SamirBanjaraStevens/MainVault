@@ -1,0 +1,280 @@
+\documentclass[12pt]{article}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+% Set the default font path to your folder
+\defaultfontfeatures{Path=/Users/samirbanjara/Library/Fonts/}
+% Set the main font to one of the fonts in your folder
+\setmainfont[
+    Path=/Users/samirbanjara/Library/Fonts/, % Specify the full path to your fonts
+    UprightFont = OverpassNerdFontPropo-Regular.otf,      % Regular font
+    BoldFont = OverpassNerdFontPropo-Bold.otf,            % Bold font
+    ItalicFont = OverpassNerdFontPropo-Italic.otf,        % Italic font
+    BoldItalicFont = OverpassNerdFontPropo-BoldItalic.otf, % Bold Italic font
+    LightFont = OverpassNerdFontPropo-Light.otf,          % Light font
+    LightItalicFont = OverpassNerdFontPropo-LightItalic.otf, % Light Italic font
+    SemiBoldFont = OverpassNerdFontPropo-SemiBold.otf,    % SemiBold font
+    SemiBoldItalicFont = OverpassNerdFontPropo-SemiBoldItalic.otf, % SemiBold Italic font
+    ExtraBoldFont = OverpassNerdFontPropo-ExtraBold.otf,  % ExtraBold font
+    ExtraBoldItalicFont = OverpassNerdFontPropo-ExtraBoldItalic.otf, % ExtraBold Italic font
+    ThinFont = OverpassNerdFontPropo-Thin.otf,            % Thin font
+    ThinItalicFont = OverpassNerdFontPropo-ThinItalic.otf, % Thin Italic font
+    HeavyFont = OverpassNerdFontPropo-Heavy.otf,          % Heavy font
+    HeavyItalicFont = OverpassNerdFontPropo-HeavyItalic.otf, % Heavy Italic font
+    ExtraLightFont = OverpassNerdFontPropo-ExtraLight.otf, % ExtraLight font
+    ExtraLightItalicFont = OverpassNerdFontPropo-ExtraLightItalic.otf % ExtraLight Italic font
+]{OverpassNerdFontPropo}
+
+\title{MA 221 Differential Equations Recitation F}
+\author{Samir Banjara}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Section 2.1: Problem 28}
+\raggedright
+\textbf{Question} \\
+Find the critical points and phase portrait of the given autonomous first-order differential equation. Classify each critical point as asymptotically stable, unstable, or semi-stable. By hand, sketch typical solution curves in the regions in the \(xy\)-plane determined by the graphs of the equilibrium solutions.
+
+\[
+\frac{dy}{dx} = \frac{ye^{y} - 9y}{e^y}
+\]
+
+\textbf{Solution:} \\
+Critical points are the solution of the equation:
+
+\[
+\begin{aligned}\
+    f(y) &= ye^{y} - 9y = 0 \\
+    \frac{ye^y - 9y}{e^y} &= 0 \\
+    y(e^y - 9) &= 0 \\
+    y = 0 &\text{ or } e^y - 9 = 0\\
+    y = 0 &\text{ or } y = \ln 9 = 2\ln 3
+\end{aligned}
+\]
+
+We have the critical points at \(y = 0\) and \(y = 2\ln 3\). To find out where our arrows in the phase portrait point, use:
+
+\[
+\begin{aligned}
+    f(-1) &= 9e - 1 > 0 \\
+    f(1) &= 1 - \frac{9}{e} < 0\\ 
+    f(3) &= 3 - \frac{27}{e^3} > 0
+\end{aligned}
+\]
+Since both arrows are pointing towards the critical point at \(y = 0\), it is a stable critical point. The critical point at \(y = 2\ln 3\) is unstable.
+
+\newpage
+
+\section*{Section 2.2: Problem 33}
+
+\raggedright
+\textbf{Question:} \\
+Find an explicit solution of the given initial value problem. Determine the exact interval \(I\) of definition by analytical methods. Use a graphing utility to plot the graph of the solution.
+
+\[
+e^{y}dx - e^{-x}dy = 0
+\]
+
+\textbf{Solution:} \\
+We rewrite the equation as:
+
+\[
+e^{y}dx = e^{-x}dy
+\]
+
+Multiplying both sides by \( e^{x} e^{-y} \), we get:
+
+\[
+e^{x}dx = e^{-y}dy
+\]
+
+Integrating both sides, we obtain:
+
+\[
+\begin{aligned}
+    \int e^{x}dx &= \int e^{-y}dy \\
+    e^{x} &= -e^{-y} + C \\
+    e^{-y} &= -e^{x} + C \\
+    y &= -\ln(-e^{x} + C)
+\end{aligned}
+\]
+
+Using the initial condition \(y(0) = 0\), we find:
+
+\[
+\begin{aligned}
+    0 &= -\ln(-e^{0} + C) \\
+    0 &= \ln(C - 1) \\
+    C &= 2
+\end{aligned}
+\]
+
+Thus, the solution to the initial value problem is:
+
+\[
+y = -\ln(-e^{x} + 2)
+\]
+
+The solution is only defined when \( -e^{x} + 2 > 0 \), which gives:
+
+\[
+\begin{aligned}
+    e^{x} &< 2\\
+    x &< \ln 2
+\end{aligned}
+\]
+
+Therefore, the solution is defined on the interval \(I = (-\infty, \ln 2)\).
+
+\newpage
+
+\section*{Section 2.3: Problem 16}
+\raggedright
+\textbf{Question:} \\
+Find the general solution of the given differential equation. Give the largest interval \(I\) over which the general solution is defined. Determine whether there are any transient terms in the general solution.
+
+\[
+ydx = (ye^{y} - 2x)dy
+\]
+
+\textbf{Solution:} \\
+We begin by rewriting the equation:
+
+\[
+\frac{dx}{dy} + \frac{2x}{y} = e^{y}
+\]
+
+The integrating factor is:
+
+\[
+\mu(y) = e^{\int \frac{2}{y}dy} = y^2
+\]
+
+Multiplying both sides by \(y^2\), we get:
+
+\[
+y^2dx + 2xy^2dy = y^2e^{y}dy
+\]
+
+This simplifies to:
+
+\[
+\frac{d}{dy}(xy^2) = y^2e^{y}
+\]
+
+Integrating both sides:
+
+\[
+xy^2 = e^{y}(y^2 - 2y + 2) + C
+\]
+
+Thus, the general solution is:
+
+\[
+x = e^{y}\frac{y^2 - 2y + 2}{y^2} + \frac{C}{y^2}
+\]
+
+\newpage
+
+\section*{Section 2.4: Problem 8}
+\raggedright
+\textbf{Question:} \\
+Determine whether the given differential equation is exact. If it is exact, solve it.
+
+\[
+\left(1 + \ln x + \frac{y}{x}\right)dx = (1 - \ln x)dy
+\]
+
+\textbf{Solution:} \\
+Given:
+
+\[
+M(x,y) = \left(1 + \ln x + \frac{y}{x}\right), \quad N(x,y) = -(1 - \ln x)
+\]
+
+We find:
+
+\[
+\frac{\partial M}{\partial y} = \frac{1}{x}, \quad \frac{\partial N}{\partial x} = \frac{1}{x}
+\]
+
+Since \( \frac{\partial M}{\partial y} = \frac{\partial N}{\partial x} \), the equation is exact. We find a function \(f(x, y)\) such that:
+
+\[
+\frac{\partial f}{\partial x} = 1 + \ln x + \frac{y}{x}
+\]
+
+Integrating with respect to \(x\):
+
+\[
+f(x,y) = x(1 + \ln x) + y \ln x - y = C
+\]
+
+Thus, the general solution is:
+
+\[
+x(1 + \ln x) + y(\ln x - 1) = C
+\]
+
+\newpage
+
+\section*{Section 2.5: Problem 26}
+\raggedright
+\textbf{Question:} \\
+Solve the given differential equation using an appropriate substitution.
+
+\[
+\frac{dy}{dx} = \sin(x + y)
+\]
+
+\textbf{Solution:} \\
+Let \(u = x + y\). Then:
+
+\[
+\frac{du}{dx} = 1 + \frac{dy}{dx}, \quad \frac{dy}{dx} = \frac{du}{dx} - 1
+\]
+
+Substituting:
+
+\[
+\sin u = \frac{du}{dx} - 1
+\]
+\[
+\frac{du}{dx} = \sin u + 1
+\]
+
+Separating variables:
+
+\[
+\int \frac{1}{\sin u + 1}du = \int dx
+\]
+
+Solving the integral:
+
+\[
+\int \frac{1 - \sin u}{\cos^2 u}du = \int dx
+\]
+\[
+\tan u - \sec u = x + C
+\]
+
+Substituting back \(u = x + y\), we get:
+
+\[
+\tan(x + y) - \sec(x + y) = x + C
+\]
+
+Thus, the solution to the differential equation is:
+
+\[
+\tan(x + y) - \sec(x + y) = x + C
+\]
+
+\end{document}
