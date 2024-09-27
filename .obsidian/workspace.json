@@ -4,22 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "f39e2be357bf45c6",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "13a9b43fc9a07300",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "University/FALL 2024/MA 222 - Probability & Statistics/Homework/HW 3/HW 3.pdf"
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "ab0f3fcad3a24e76",
         "type": "tabs",
         "children": [

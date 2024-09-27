@@ -1,6 +1,6 @@
 {
   "accentColor": "",
-  "cssTheme": "Obsidianite",
+  "cssTheme": "AnuPpuccin",
   "translucency": false,
   "theme": "obsidian",
   "baseFontSize": 25,
@@ -8,8 +8,8 @@
     "Untitled",
     "extended color schemes"
   ],
-  "textFontFamily": "FiraCodeNFP-Ret",
-  "interfaceFontFamily": "",
+  "textFontFamily": "FiraCodeNFP-Ret,Overpass Nerd Font Propo,Rubik",
+  "interfaceFontFamily": "FiraCode Nerd Font Propo,FiraCode Nerd Font",
   "showViewHeader": true,
   "nativeMenus": false,
   "monospaceFontFamily": "JetBrainsMonoNL Nerd Font Propo",
