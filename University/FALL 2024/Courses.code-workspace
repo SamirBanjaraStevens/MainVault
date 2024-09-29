@@ -20,6 +20,9 @@
 		},
 		{
 			"path": "PEP 111 - Mechanics"
+		},
+		{
+			"path": "../Templates"
 		}
 	],
 	"settings": {}
